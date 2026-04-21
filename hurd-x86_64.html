@@ -48,7 +48,8 @@ function archVersionsOnLoad() {
   <div>
     <span>
       <input id="omnipresent" type="checkbox" onchange="omnipresentChanged(this)">
-      <label for="omnipresent">Hide Omnipresent</label></span>
+      <label for="omnipresent">Hide Omnipresent</label>
+    </span>
   </div>
   <table>
     <tr>
@@ -84,7 +85,7 @@ function archVersionsOnLoad() {
       <th>2.43</th>
       
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libBrokenLocale</td>
       <td>__ctype_get_mb_cur_max</td>
       <td colspan="22" class="empty"></td>
@@ -366,7 +367,7 @@ function archVersionsOnLoad() {
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>_IO_flockfile</td>
       <td colspan="22" class="empty"></td>
@@ -438,13 +439,13 @@ function archVersionsOnLoad() {
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>_IO_ftrylockfile</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>_IO_funlockfile</td>
       <td colspan="22" class="empty"></td>
@@ -1170,7 +1171,7 @@ function archVersionsOnLoad() {
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>__ctype_get_mb_cur_max</td>
       <td colspan="22" class="empty"></td>
@@ -1266,7 +1267,7 @@ function archVersionsOnLoad() {
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>__errno_location</td>
       <td colspan="22" class="empty"></td>
@@ -1338,19 +1339,19 @@ function archVersionsOnLoad() {
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>__finite</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>__finitef</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>__finitel</td>
       <td colspan="22" class="empty"></td>
@@ -1530,7 +1531,7 @@ function archVersionsOnLoad() {
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>__h_errno_location</td>
       <td colspan="22" class="empty"></td>
@@ -2490,29 +2491,29 @@ function archVersionsOnLoad() {
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>__pthread_get_cleanup_stack</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>__pthread_key_create</td>
       <td colspan="26" class="empty"></td>
-      <td colspan="2">2.38</td>
+      <td colspan="2">2.38 (moved from libpthread)</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>__pthread_kill</td>
       <td colspan="27" class="empty"></td>
-      <td>2.38</td>
+      <td>2.38 (moved from libpthread)</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>__pthread_mutex_transfer_np</td>
       <td colspan="27" class="empty"></td>
-      <td>2.38</td>
+      <td>2.38 (moved from libpthread)</td>
     </tr>
     <tr>
       <td>libc</td>
@@ -2706,19 +2707,19 @@ function archVersionsOnLoad() {
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>__signbit</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>__signbitf</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>__signbitl</td>
       <td colspan="22" class="empty"></td>
@@ -3954,7 +3955,7 @@ function archVersionsOnLoad() {
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>aligned_alloc</td>
       <td colspan="22" class="empty"></td>
@@ -4272,13 +4273,13 @@ function archVersionsOnLoad() {
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>call_once</td>
       <td colspan="27" class="empty"></td>
-      <td>2.38, 2.43</td>
+      <td>2.38 (moved from libpthread), 2.43</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>calloc</td>
       <td colspan="22" class="empty"></td>
@@ -4488,41 +4489,41 @@ function archVersionsOnLoad() {
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>cnd_broadcast</td>
       <td colspan="27" class="empty"></td>
-      <td>2.38, 2.43</td>
+      <td>2.38 (moved from libpthread), 2.43</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>cnd_destroy</td>
       <td colspan="27" class="empty"></td>
-      <td>2.38, 2.43</td>
+      <td>2.38 (moved from libpthread), 2.43</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>cnd_init</td>
       <td colspan="27" class="empty"></td>
-      <td>2.38, 2.43</td>
+      <td>2.38 (moved from libpthread), 2.43</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>cnd_signal</td>
       <td colspan="27" class="empty"></td>
-      <td>2.38, 2.43</td>
+      <td>2.38 (moved from libpthread), 2.43</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>cnd_timedwait</td>
       <td colspan="27" class="empty"></td>
-      <td>2.38, 2.43</td>
+      <td>2.38 (moved from libpthread), 2.43</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>cnd_wait</td>
       <td colspan="27" class="empty"></td>
-      <td>2.38, 2.43</td>
+      <td>2.38 (moved from libpthread), 2.43</td>
     </tr>
     <tr>
       <td>libc</td>
@@ -4542,19 +4543,19 @@ function archVersionsOnLoad() {
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>copysign</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>copysignf</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>copysignl</td>
       <td colspan="22" class="empty"></td>
@@ -5424,19 +5425,19 @@ function archVersionsOnLoad() {
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>finite</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>finitef</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>finitel</td>
       <td colspan="22" class="empty"></td>
@@ -5454,7 +5455,7 @@ function archVersionsOnLoad() {
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>flockfile</td>
       <td colspan="22" class="empty"></td>
@@ -5586,7 +5587,7 @@ function archVersionsOnLoad() {
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>free</td>
       <td colspan="22" class="empty"></td>
@@ -5640,19 +5641,19 @@ function archVersionsOnLoad() {
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>frexp</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>frexpf</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>frexpl</td>
       <td colspan="22" class="empty"></td>
@@ -5796,7 +5797,7 @@ function archVersionsOnLoad() {
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>ftrylockfile</td>
       <td colspan="22" class="empty"></td>
@@ -5874,7 +5875,7 @@ function archVersionsOnLoad() {
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>funlockfile</td>
       <td colspan="22" class="empty"></td>
@@ -7896,19 +7897,19 @@ function archVersionsOnLoad() {
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>ldexp</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>ldexpf</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>ldexpl</td>
       <td colspan="22" class="empty"></td>
@@ -8232,49 +8233,49 @@ function archVersionsOnLoad() {
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>mallinfo</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>mallinfo2</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>malloc</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>malloc_info</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>malloc_stats</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>malloc_trim</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>malloc_usable_size</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>mallopt</td>
       <td colspan="22" class="empty"></td>
@@ -8346,19 +8347,19 @@ function archVersionsOnLoad() {
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>mcheck</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>mcheck_check_all</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>mcheck_pedantic</td>
       <td colspan="22" class="empty"></td>
@@ -8370,7 +8371,7 @@ function archVersionsOnLoad() {
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>memalign</td>
       <td colspan="22" class="empty"></td>
@@ -8622,19 +8623,19 @@ function archVersionsOnLoad() {
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>modf</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>modff</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>modfl</td>
       <td colspan="22" class="empty"></td>
@@ -8652,7 +8653,7 @@ function archVersionsOnLoad() {
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>mprobe</td>
       <td colspan="22" class="empty"></td>
@@ -8712,47 +8713,47 @@ function archVersionsOnLoad() {
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>mtrace</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>mtx_destroy</td>
       <td colspan="27" class="empty"></td>
-      <td>2.38, 2.43</td>
+      <td>2.38 (moved from libpthread), 2.43</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>mtx_init</td>
       <td colspan="27" class="empty"></td>
-      <td>2.38, 2.43</td>
+      <td>2.38 (moved from libpthread), 2.43</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>mtx_lock</td>
       <td colspan="27" class="empty"></td>
-      <td>2.38, 2.43</td>
+      <td>2.38 (moved from libpthread), 2.43</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>mtx_timedlock</td>
       <td colspan="27" class="empty"></td>
-      <td>2.38, 2.43</td>
+      <td>2.38 (moved from libpthread), 2.43</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>mtx_trylock</td>
       <td colspan="27" class="empty"></td>
-      <td>2.38, 2.43</td>
+      <td>2.38 (moved from libpthread), 2.43</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>mtx_unlock</td>
       <td colspan="27" class="empty"></td>
-      <td>2.38, 2.43</td>
+      <td>2.38 (moved from libpthread), 2.43</td>
     </tr>
     <tr>
       <td>libc</td>
@@ -8772,7 +8773,7 @@ function archVersionsOnLoad() {
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>muntrace</td>
       <td colspan="22" class="empty"></td>
@@ -9102,7 +9103,7 @@ function archVersionsOnLoad() {
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>posix_memalign</td>
       <td colspan="22" class="empty"></td>
@@ -9360,605 +9361,605 @@ function archVersionsOnLoad() {
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_attr_destroy</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_attr_getdetachstate</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_attr_getguardsize</td>
       <td colspan="25" class="empty"></td>
-      <td colspan="3">2.38, 2.41</td>
+      <td colspan="3">2.38 (moved from libpthread), 2.41</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_attr_getinheritsched</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_attr_getschedparam</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_attr_getschedpolicy</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_attr_getscope</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_attr_getstack</td>
       <td colspan="25" class="empty"></td>
-      <td colspan="3">2.38, 2.41</td>
+      <td colspan="3">2.38 (moved from libpthread), 2.41</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_attr_getstackaddr</td>
       <td colspan="25" class="empty"></td>
-      <td colspan="3">2.38, 2.41</td>
+      <td colspan="3">2.38 (moved from libpthread), 2.41</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_attr_getstacksize</td>
       <td colspan="25" class="empty"></td>
-      <td colspan="3">2.38, 2.41</td>
+      <td colspan="3">2.38 (moved from libpthread), 2.41</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_attr_init</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_attr_setdetachstate</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_attr_setguardsize</td>
       <td colspan="25" class="empty"></td>
-      <td colspan="3">2.38, 2.41</td>
+      <td colspan="3">2.38 (moved from libpthread), 2.41</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_attr_setinheritsched</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_attr_setschedparam</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_attr_setschedpolicy</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_attr_setscope</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_attr_setstack</td>
       <td colspan="25" class="empty"></td>
-      <td colspan="3">2.38, 2.41</td>
+      <td colspan="3">2.38 (moved from libpthread), 2.41</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_attr_setstackaddr</td>
       <td colspan="25" class="empty"></td>
-      <td colspan="3">2.38, 2.41</td>
+      <td colspan="3">2.38 (moved from libpthread), 2.41</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_attr_setstacksize</td>
       <td colspan="25" class="empty"></td>
-      <td colspan="3">2.38, 2.41</td>
+      <td colspan="3">2.38 (moved from libpthread), 2.41</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_barrier_destroy</td>
       <td colspan="26" class="empty"></td>
-      <td colspan="2">2.38, 2.42</td>
+      <td colspan="2">2.38 (moved from libpthread), 2.42</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_barrier_init</td>
       <td colspan="26" class="empty"></td>
-      <td colspan="2">2.38, 2.42</td>
+      <td colspan="2">2.38 (moved from libpthread), 2.42</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_barrier_wait</td>
       <td colspan="26" class="empty"></td>
-      <td colspan="2">2.38, 2.42</td>
+      <td colspan="2">2.38 (moved from libpthread), 2.42</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_barrierattr_destroy</td>
       <td colspan="26" class="empty"></td>
-      <td colspan="2">2.38, 2.42</td>
+      <td colspan="2">2.38 (moved from libpthread), 2.42</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_barrierattr_getpshared</td>
       <td colspan="26" class="empty"></td>
-      <td colspan="2">2.38, 2.42</td>
+      <td colspan="2">2.38 (moved from libpthread), 2.42</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_barrierattr_init</td>
       <td colspan="26" class="empty"></td>
-      <td colspan="2">2.38, 2.42</td>
+      <td colspan="2">2.38 (moved from libpthread), 2.42</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_barrierattr_setpshared</td>
       <td colspan="26" class="empty"></td>
-      <td colspan="2">2.38, 2.42</td>
+      <td colspan="2">2.38 (moved from libpthread), 2.42</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_cancel</td>
       <td colspan="27" class="empty"></td>
-      <td>2.38, 2.43</td>
+      <td>2.38 (moved from libpthread), 2.43</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_clockjoin_np</td>
       <td colspan="27" class="empty"></td>
-      <td>2.38, 2.43</td>
+      <td>2.38 (moved from libpthread), 2.43</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_cond_broadcast</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_cond_clockwait</td>
       <td colspan="25" class="empty"></td>
-      <td colspan="3">2.38</td>
+      <td colspan="3">2.38 (moved from libpthread)</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_cond_destroy</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_cond_init</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_cond_signal</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_cond_timedwait</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_cond_wait</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_condattr_destroy</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_condattr_getclock</td>
       <td colspan="25" class="empty"></td>
-      <td colspan="3">2.38, 2.41</td>
+      <td colspan="3">2.38 (moved from libpthread), 2.41</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_condattr_getpshared</td>
       <td colspan="25" class="empty"></td>
-      <td colspan="3">2.38, 2.41</td>
+      <td colspan="3">2.38 (moved from libpthread), 2.41</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_condattr_init</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_condattr_setclock</td>
       <td colspan="25" class="empty"></td>
-      <td colspan="3">2.38, 2.41</td>
+      <td colspan="3">2.38 (moved from libpthread), 2.41</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_condattr_setpshared</td>
       <td colspan="25" class="empty"></td>
-      <td colspan="3">2.38, 2.41</td>
+      <td colspan="3">2.38 (moved from libpthread), 2.41</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_create</td>
       <td colspan="27" class="empty"></td>
-      <td>2.38, 2.43</td>
+      <td>2.38 (moved from libpthread), 2.43</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_detach</td>
       <td colspan="27" class="empty"></td>
-      <td>2.38, 2.43</td>
+      <td>2.38 (moved from libpthread), 2.43</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_equal</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_exit</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_getattr_np</td>
       <td colspan="27" class="empty"></td>
-      <td>2.38, 2.43</td>
+      <td>2.38 (moved from libpthread), 2.43</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_getconcurrency</td>
       <td colspan="27" class="empty"></td>
-      <td>2.38, 2.43</td>
+      <td>2.38 (moved from libpthread), 2.43</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_getcpuclockid</td>
       <td colspan="27" class="empty"></td>
-      <td>2.38, 2.43</td>
+      <td>2.38 (moved from libpthread), 2.43</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_getname_np</td>
       <td colspan="27" class="empty"></td>
-      <td>2.40, 2.43</td>
+      <td>2.40 (moved from libpthread), 2.43</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_getschedparam</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_getspecific</td>
       <td colspan="26" class="empty"></td>
-      <td colspan="2">2.38, 2.42</td>
+      <td colspan="2">2.38 (moved from libpthread), 2.42</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_hurd_cond_timedwait_np</td>
       <td colspan="27" class="empty"></td>
-      <td>2.38, 2.43</td>
+      <td>2.38 (moved from libpthread), 2.43</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_hurd_cond_wait_np</td>
       <td colspan="27" class="empty"></td>
-      <td>2.38, 2.43</td>
+      <td>2.38 (moved from libpthread), 2.43</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_join</td>
       <td colspan="27" class="empty"></td>
-      <td>2.38, 2.43</td>
+      <td>2.38 (moved from libpthread), 2.43</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_key_create</td>
       <td colspan="26" class="empty"></td>
-      <td colspan="2">2.38, 2.42</td>
+      <td colspan="2">2.38 (moved from libpthread), 2.42</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_key_delete</td>
       <td colspan="26" class="empty"></td>
-      <td colspan="2">2.38, 2.42</td>
+      <td colspan="2">2.38 (moved from libpthread), 2.42</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_kill</td>
       <td colspan="27" class="empty"></td>
-      <td>2.38, 2.43</td>
+      <td>2.38 (moved from libpthread), 2.43</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_mutex_clocklock</td>
       <td colspan="26" class="empty"></td>
-      <td colspan="2">2.38</td>
+      <td colspan="2">2.38 (moved from libpthread)</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_mutex_consistent</td>
       <td colspan="26" class="empty"></td>
-      <td colspan="2">2.38, 2.42</td>
+      <td colspan="2">2.38 (moved from libpthread), 2.42</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_mutex_consistent_np</td>
       <td colspan="26" class="empty"></td>
-      <td colspan="2">2.38, 2.42</td>
+      <td colspan="2">2.38 (moved from libpthread), 2.42</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_mutex_destroy</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_mutex_getprioceiling</td>
       <td colspan="26" class="empty"></td>
-      <td colspan="2">2.38, 2.42</td>
+      <td colspan="2">2.38 (moved from libpthread), 2.42</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_mutex_init</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_mutex_lock</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_mutex_setprioceiling</td>
       <td colspan="26" class="empty"></td>
-      <td colspan="2">2.38, 2.42</td>
+      <td colspan="2">2.38 (moved from libpthread), 2.42</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_mutex_timedlock</td>
       <td colspan="26" class="empty"></td>
-      <td colspan="2">2.38</td>
+      <td colspan="2">2.38 (moved from libpthread)</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_mutex_transfer_np</td>
       <td colspan="27" class="empty"></td>
-      <td>2.38, 2.43</td>
+      <td>2.38 (moved from libpthread), 2.43</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_mutex_trylock</td>
       <td colspan="26" class="empty"></td>
-      <td colspan="2">2.38, 2.42</td>
+      <td colspan="2">2.38 (moved from libpthread), 2.42</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_mutex_unlock</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_mutexattr_destroy</td>
       <td colspan="25" class="empty"></td>
-      <td colspan="3">2.38</td>
+      <td colspan="3">2.38 (moved from libpthread)</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_mutexattr_getprioceiling</td>
       <td colspan="25" class="empty"></td>
-      <td colspan="3">2.38, 2.41</td>
+      <td colspan="3">2.38 (moved from libpthread), 2.41</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_mutexattr_getprotocol</td>
       <td colspan="25" class="empty"></td>
-      <td colspan="3">2.38, 2.41</td>
+      <td colspan="3">2.38 (moved from libpthread), 2.41</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_mutexattr_getpshared</td>
       <td colspan="25" class="empty"></td>
-      <td colspan="3">2.38, 2.41</td>
+      <td colspan="3">2.38 (moved from libpthread), 2.41</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_mutexattr_getrobust</td>
       <td colspan="25" class="empty"></td>
-      <td colspan="3">2.38, 2.41</td>
+      <td colspan="3">2.38 (moved from libpthread), 2.41</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_mutexattr_getrobust_np</td>
       <td colspan="25" class="empty"></td>
-      <td colspan="3">2.38, 2.41</td>
+      <td colspan="3">2.38 (moved from libpthread), 2.41</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_mutexattr_gettype</td>
       <td colspan="25" class="empty"></td>
-      <td colspan="3">2.38, 2.41</td>
+      <td colspan="3">2.38 (moved from libpthread), 2.41</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_mutexattr_init</td>
       <td colspan="25" class="empty"></td>
-      <td colspan="3">2.38</td>
+      <td colspan="3">2.38 (moved from libpthread)</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_mutexattr_setprioceiling</td>
       <td colspan="25" class="empty"></td>
-      <td colspan="3">2.38, 2.41</td>
+      <td colspan="3">2.38 (moved from libpthread), 2.41</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_mutexattr_setprotocol</td>
       <td colspan="25" class="empty"></td>
-      <td colspan="3">2.38, 2.41</td>
+      <td colspan="3">2.38 (moved from libpthread), 2.41</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_mutexattr_setpshared</td>
       <td colspan="25" class="empty"></td>
-      <td colspan="3">2.38, 2.41</td>
+      <td colspan="3">2.38 (moved from libpthread), 2.41</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_mutexattr_setrobust</td>
       <td colspan="25" class="empty"></td>
-      <td colspan="3">2.38, 2.41</td>
+      <td colspan="3">2.38 (moved from libpthread), 2.41</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_mutexattr_setrobust_np</td>
       <td colspan="25" class="empty"></td>
-      <td colspan="3">2.38, 2.41</td>
+      <td colspan="3">2.38 (moved from libpthread), 2.41</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_mutexattr_settype</td>
       <td colspan="25" class="empty"></td>
-      <td colspan="3">2.38, 2.41</td>
+      <td colspan="3">2.38 (moved from libpthread), 2.41</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_once</td>
       <td colspan="26" class="empty"></td>
-      <td colspan="2">2.38, 2.42</td>
+      <td colspan="2">2.38 (moved from libpthread), 2.42</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_rwlock_clockrdlock</td>
       <td colspan="26" class="empty"></td>
-      <td colspan="2">2.38, 2.42</td>
+      <td colspan="2">2.38 (moved from libpthread), 2.42</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_rwlock_clockwrlock</td>
       <td colspan="26" class="empty"></td>
-      <td colspan="2">2.38, 2.42</td>
+      <td colspan="2">2.38 (moved from libpthread), 2.42</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_rwlock_destroy</td>
       <td colspan="26" class="empty"></td>
-      <td colspan="2">2.38, 2.42</td>
+      <td colspan="2">2.38 (moved from libpthread), 2.42</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_rwlock_init</td>
       <td colspan="26" class="empty"></td>
-      <td colspan="2">2.38, 2.42</td>
+      <td colspan="2">2.38 (moved from libpthread), 2.42</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_rwlock_rdlock</td>
       <td colspan="26" class="empty"></td>
-      <td colspan="2">2.38, 2.42</td>
+      <td colspan="2">2.38 (moved from libpthread), 2.42</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_rwlock_timedrdlock</td>
       <td colspan="26" class="empty"></td>
-      <td colspan="2">2.38, 2.42</td>
+      <td colspan="2">2.38 (moved from libpthread), 2.42</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_rwlock_timedwrlock</td>
       <td colspan="26" class="empty"></td>
-      <td colspan="2">2.38, 2.42</td>
+      <td colspan="2">2.38 (moved from libpthread), 2.42</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_rwlock_tryrdlock</td>
       <td colspan="26" class="empty"></td>
-      <td colspan="2">2.38, 2.42</td>
+      <td colspan="2">2.38 (moved from libpthread), 2.42</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_rwlock_trywrlock</td>
       <td colspan="26" class="empty"></td>
-      <td colspan="2">2.38, 2.42</td>
+      <td colspan="2">2.38 (moved from libpthread), 2.42</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_rwlock_unlock</td>
       <td colspan="26" class="empty"></td>
-      <td colspan="2">2.38, 2.42</td>
+      <td colspan="2">2.38 (moved from libpthread), 2.42</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_rwlock_wrlock</td>
       <td colspan="26" class="empty"></td>
-      <td colspan="2">2.38, 2.42</td>
+      <td colspan="2">2.38 (moved from libpthread), 2.42</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_rwlockattr_destroy</td>
       <td colspan="26" class="empty"></td>
-      <td colspan="2">2.38, 2.42</td>
+      <td colspan="2">2.38 (moved from libpthread), 2.42</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_rwlockattr_getpshared</td>
       <td colspan="26" class="empty"></td>
-      <td colspan="2">2.38, 2.42</td>
+      <td colspan="2">2.38 (moved from libpthread), 2.42</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_rwlockattr_init</td>
       <td colspan="26" class="empty"></td>
-      <td colspan="2">2.38, 2.42</td>
+      <td colspan="2">2.38 (moved from libpthread), 2.42</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_rwlockattr_setpshared</td>
       <td colspan="26" class="empty"></td>
-      <td colspan="2">2.38, 2.42</td>
+      <td colspan="2">2.38 (moved from libpthread), 2.42</td>
     </tr>
     <tr>
       <td>libc</td>
@@ -9966,107 +9967,107 @@ function archVersionsOnLoad() {
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_setcancelstate</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_setcanceltype</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_setconcurrency</td>
       <td colspan="27" class="empty"></td>
-      <td>2.38, 2.43</td>
+      <td>2.38 (moved from libpthread), 2.43</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_setname_np</td>
       <td colspan="27" class="empty"></td>
-      <td>2.40, 2.43</td>
+      <td>2.40 (moved from libpthread), 2.43</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_setschedparam</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_setschedprio</td>
       <td colspan="27" class="empty"></td>
-      <td>2.38, 2.43</td>
+      <td>2.38 (moved from libpthread), 2.43</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_setspecific</td>
       <td colspan="26" class="empty"></td>
-      <td colspan="2">2.38, 2.42</td>
+      <td colspan="2">2.38 (moved from libpthread), 2.42</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_sigmask</td>
       <td colspan="25" class="empty"></td>
-      <td colspan="3">2.38, 2.41</td>
+      <td colspan="3">2.38 (moved from libpthread), 2.41</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_spin_destroy</td>
       <td colspan="27" class="empty"></td>
-      <td>2.38, 2.43</td>
+      <td>2.38 (moved from libpthread), 2.43</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_spin_init</td>
       <td colspan="27" class="empty"></td>
-      <td>2.38, 2.43</td>
+      <td>2.38 (moved from libpthread), 2.43</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_spin_lock</td>
       <td colspan="27" class="empty"></td>
-      <td>2.38, 2.43</td>
+      <td>2.38 (moved from libpthread), 2.43</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_spin_trylock</td>
       <td colspan="27" class="empty"></td>
-      <td>2.38, 2.43</td>
+      <td>2.38 (moved from libpthread), 2.43</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_spin_unlock</td>
       <td colspan="27" class="empty"></td>
-      <td>2.38, 2.43</td>
+      <td>2.38 (moved from libpthread), 2.43</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_testcancel</td>
       <td colspan="27" class="empty"></td>
-      <td>2.38, 2.43</td>
+      <td>2.38 (moved from libpthread), 2.43</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_timedjoin_np</td>
       <td colspan="27" class="empty"></td>
-      <td>2.38, 2.43</td>
+      <td>2.38 (moved from libpthread), 2.43</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_tryjoin_np</td>
       <td colspan="27" class="empty"></td>
-      <td>2.38, 2.43</td>
+      <td>2.38 (moved from libpthread), 2.43</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pthread_yield</td>
       <td colspan="27" class="empty"></td>
-      <td>2.38, 2.43</td>
+      <td>2.38 (moved from libpthread), 2.43</td>
     </tr>
     <tr>
       <td>libc</td>
@@ -10188,7 +10189,7 @@ function archVersionsOnLoad() {
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pvalloc</td>
       <td colspan="22" class="empty"></td>
@@ -10440,7 +10441,7 @@ function archVersionsOnLoad() {
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>realloc</td>
       <td colspan="22" class="empty"></td>
@@ -10752,19 +10753,19 @@ function archVersionsOnLoad() {
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>scalbn</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>scalbnf</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>scalbnl</td>
       <td colspan="22" class="empty"></td>
@@ -10890,71 +10891,71 @@ function archVersionsOnLoad() {
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>sem_clockwait</td>
       <td colspan="27" class="empty"></td>
-      <td>2.38, 2.43</td>
+      <td>2.38 (moved from libpthread), 2.43</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>sem_close</td>
       <td colspan="27" class="empty"></td>
-      <td>2.38, 2.43</td>
+      <td>2.38 (moved from libpthread), 2.43</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>sem_destroy</td>
       <td colspan="27" class="empty"></td>
-      <td>2.38, 2.43</td>
+      <td>2.38 (moved from libpthread), 2.43</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>sem_getvalue</td>
       <td colspan="27" class="empty"></td>
-      <td>2.38, 2.43</td>
+      <td>2.38 (moved from libpthread), 2.43</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>sem_init</td>
       <td colspan="27" class="empty"></td>
-      <td>2.38, 2.43</td>
+      <td>2.38 (moved from libpthread), 2.43</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>sem_open</td>
       <td colspan="27" class="empty"></td>
-      <td>2.38, 2.43</td>
+      <td>2.38 (moved from libpthread), 2.43</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>sem_post</td>
       <td colspan="27" class="empty"></td>
-      <td>2.38, 2.43</td>
+      <td>2.38 (moved from libpthread), 2.43</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>sem_timedwait</td>
       <td colspan="27" class="empty"></td>
-      <td>2.38, 2.43</td>
+      <td>2.38 (moved from libpthread), 2.43</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>sem_trywait</td>
       <td colspan="27" class="empty"></td>
-      <td>2.38, 2.43</td>
+      <td>2.38 (moved from libpthread), 2.43</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>sem_unlink</td>
       <td colspan="27" class="empty"></td>
-      <td>2.38, 2.43</td>
+      <td>2.38 (moved from libpthread), 2.43</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>sem_wait</td>
       <td colspan="27" class="empty"></td>
-      <td>2.38, 2.43</td>
+      <td>2.38 (moved from libpthread), 2.43</td>
     </tr>
     <tr>
       <td>libc</td>
@@ -12906,11 +12907,11 @@ function archVersionsOnLoad() {
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>thrd_create</td>
       <td colspan="27" class="empty"></td>
-      <td>2.38, 2.43</td>
+      <td>2.38 (moved from libpthread), 2.43</td>
     </tr>
     <tr>
       <td>libc</td>
@@ -12918,11 +12919,11 @@ function archVersionsOnLoad() {
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>thrd_detach</td>
       <td colspan="27" class="empty"></td>
-      <td>2.38, 2.43</td>
+      <td>2.38 (moved from libpthread), 2.43</td>
     </tr>
     <tr>
       <td>libc</td>
@@ -12930,17 +12931,17 @@ function archVersionsOnLoad() {
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>thrd_exit</td>
       <td colspan="27" class="empty"></td>
-      <td>2.38, 2.43</td>
+      <td>2.38 (moved from libpthread), 2.43</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>thrd_join</td>
       <td colspan="27" class="empty"></td>
-      <td>2.38, 2.43</td>
+      <td>2.38 (moved from libpthread), 2.43</td>
     </tr>
     <tr>
       <td>libc</td>
@@ -13116,29 +13117,29 @@ function archVersionsOnLoad() {
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>tss_create</td>
       <td colspan="27" class="empty"></td>
-      <td>2.38, 2.43</td>
+      <td>2.38 (moved from libpthread), 2.43</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>tss_delete</td>
       <td colspan="27" class="empty"></td>
-      <td>2.38, 2.43</td>
+      <td>2.38 (moved from libpthread), 2.43</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>tss_get</td>
       <td colspan="27" class="empty"></td>
-      <td>2.38, 2.43</td>
+      <td>2.38 (moved from libpthread), 2.43</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>tss_set</td>
       <td colspan="27" class="empty"></td>
-      <td>2.38, 2.43</td>
+      <td>2.38 (moved from libpthread), 2.43</td>
     </tr>
     <tr>
       <td>libc</td>
@@ -13332,7 +13333,7 @@ function archVersionsOnLoad() {
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>valloc</td>
       <td colspan="22" class="empty"></td>
@@ -14088,19 +14089,19 @@ function archVersionsOnLoad() {
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>aligned_alloc</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>calloc</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>free</td>
       <td colspan="22" class="empty"></td>
@@ -14118,132 +14119,134 @@ function archVersionsOnLoad() {
       <td colspan="27" class="empty"></td>
       <td>2.43</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>mallinfo</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>mallinfo2</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>malloc</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>malloc_info</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>malloc_stats</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>malloc_trim</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>malloc_usable_size</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>mallopt</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>mcheck</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>mcheck_check_all</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>mcheck_pedantic</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>memalign</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>mprobe</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>mtrace</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>muntrace</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>posix_memalign</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>pvalloc</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>realloc</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>valloc</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libcrypt</td>
       <td>crypt</td>
       <td colspan="22" class="empty"></td>
-      <td>2.38</td><td class="deleted">x</td>
+      <td>2.38</td>
+      <td class="deleted">x</td>
       <td colspan="4" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libcrypt</td>
       <td>crypt_r</td>
       <td colspan="22" class="empty"></td>
-      <td>2.38</td><td class="deleted">x</td>
+      <td>2.38</td>
+      <td class="deleted">x</td>
       <td colspan="4" class="empty"></td>
     </tr>
     <tr>
@@ -14264,13 +14267,13 @@ function archVersionsOnLoad() {
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libm</td>
       <td>__finite</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libm</td>
       <td>__finitef</td>
       <td colspan="22" class="empty"></td>
@@ -14282,7 +14285,7 @@ function archVersionsOnLoad() {
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libm</td>
       <td>__finitel</td>
       <td colspan="22" class="empty"></td>
@@ -14390,13 +14393,13 @@ function archVersionsOnLoad() {
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libm</td>
       <td>__signbit</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libm</td>
       <td>__signbitf</td>
       <td colspan="22" class="empty"></td>
@@ -14408,7 +14411,7 @@ function archVersionsOnLoad() {
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libm</td>
       <td>__signbitl</td>
       <td colspan="22" class="empty"></td>
@@ -15860,13 +15863,13 @@ function archVersionsOnLoad() {
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libm</td>
       <td>copysign</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libm</td>
       <td>copysignf</td>
       <td colspan="22" class="empty"></td>
@@ -15902,7 +15905,7 @@ function archVersionsOnLoad() {
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libm</td>
       <td>copysignl</td>
       <td colspan="22" class="empty"></td>
@@ -17474,19 +17477,19 @@ function archVersionsOnLoad() {
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libm</td>
       <td>finite</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libm</td>
       <td>finitef</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libm</td>
       <td>finitel</td>
       <td colspan="22" class="empty"></td>
@@ -18224,13 +18227,13 @@ function archVersionsOnLoad() {
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libm</td>
       <td>frexp</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libm</td>
       <td>frexpf</td>
       <td colspan="22" class="empty"></td>
@@ -18266,7 +18269,7 @@ function archVersionsOnLoad() {
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libm</td>
       <td>frexpl</td>
       <td colspan="22" class="empty"></td>
@@ -18714,13 +18717,13 @@ function archVersionsOnLoad() {
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libm</td>
       <td>ldexp</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libm</td>
       <td>ldexpf</td>
       <td colspan="22" class="empty"></td>
@@ -18756,7 +18759,7 @@ function archVersionsOnLoad() {
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libm</td>
       <td>ldexpl</td>
       <td colspan="22" class="empty"></td>
@@ -19482,13 +19485,13 @@ function archVersionsOnLoad() {
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libm</td>
       <td>modf</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libm</td>
       <td>modff</td>
       <td colspan="22" class="empty"></td>
@@ -19524,7 +19527,7 @@ function archVersionsOnLoad() {
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libm</td>
       <td>modfl</td>
       <td colspan="22" class="empty"></td>
@@ -20334,13 +20337,13 @@ function archVersionsOnLoad() {
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libm</td>
       <td>scalbn</td>
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libm</td>
       <td>scalbnf</td>
       <td colspan="22" class="empty"></td>
@@ -20376,7 +20379,7 @@ function archVersionsOnLoad() {
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libm</td>
       <td>scalbnl</td>
       <td colspan="22" class="empty"></td>
@@ -22630,1160 +22633,1337 @@ function archVersionsOnLoad() {
       <td colspan="22" class="empty"></td>
       <td colspan="6">2.38</td>
     </tr>
-    <tr>
+    <tr class="deletion moves">
       <td>libpthread</td>
       <td>_IO_flockfile</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion moves">
       <td>libpthread</td>
       <td>_IO_ftrylockfile</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion moves">
       <td>libpthread</td>
       <td>_IO_funlockfile</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion moves">
       <td>libpthread</td>
       <td>__errno_location</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion moves">
       <td>libpthread</td>
       <td>__h_errno_location</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>__mutex_lock_solid</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>__mutex_unlock_solid</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion moves">
       <td>libpthread</td>
       <td>__pthread_get_cleanup_stack</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="4">2.38</td><td class="deleted">x</td>
+      <td colspan="4">2.38</td>
+      <td class="deleted">x</td>
       <td class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>__pthread_key_create</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="4">2.38</td><td class="deleted">x</td>
+      <td colspan="4">2.38</td>
+      <td class="deleted">x</td>
       <td class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>__pthread_kill</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>__pthread_mutex_transfer_np</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>__pthread_spin_destroy</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>__pthread_spin_init</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>__pthread_spin_lock</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>__pthread_spin_trylock</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>__pthread_spin_unlock</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>_cthreads_flockfile</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>_cthreads_ftrylockfile</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>_cthreads_funlockfile</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>_pthread_spin_lock</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>call_once</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>cnd_broadcast</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>cnd_destroy</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>cnd_init</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>cnd_signal</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>cnd_timedwait</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>cnd_wait</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>cthread_detach</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>cthread_fork</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>cthread_getspecific</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>cthread_keycreate</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>cthread_setspecific</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion moves">
       <td>libpthread</td>
       <td>flockfile</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion moves">
       <td>libpthread</td>
       <td>ftrylockfile</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion moves">
       <td>libpthread</td>
       <td>funlockfile</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>mtx_destroy</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>mtx_init</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>mtx_lock</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>mtx_timedlock</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>mtx_trylock</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>mtx_unlock</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion moves">
       <td>libpthread</td>
       <td>pthread_attr_destroy</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="3">2.38</td><td class="deleted">x</td>
+      <td colspan="3">2.38</td>
+      <td class="deleted">x</td>
       <td colspan="2" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_attr_getdetachstate</td>
       <td colspan="22" class="empty"></td>
-      <td>2.38</td><td class="deleted">x</td>
+      <td>2.38</td>
+      <td class="deleted">x</td>
       <td colspan="4" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_attr_getguardsize</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="3">2.38</td><td class="deleted">x</td>
+      <td colspan="3">2.38</td>
+      <td class="deleted">x</td>
       <td colspan="2" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_attr_getinheritsched</td>
       <td colspan="22" class="empty"></td>
-      <td>2.38</td><td class="deleted">x</td>
+      <td>2.38</td>
+      <td class="deleted">x</td>
       <td colspan="4" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_attr_getschedparam</td>
       <td colspan="22" class="empty"></td>
-      <td>2.38</td><td class="deleted">x</td>
+      <td>2.38</td>
+      <td class="deleted">x</td>
       <td colspan="4" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_attr_getschedpolicy</td>
       <td colspan="22" class="empty"></td>
-      <td>2.38</td><td class="deleted">x</td>
+      <td>2.38</td>
+      <td class="deleted">x</td>
       <td colspan="4" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion moves">
       <td>libpthread</td>
       <td>pthread_attr_getscope</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="3">2.38</td><td class="deleted">x</td>
+      <td colspan="3">2.38</td>
+      <td class="deleted">x</td>
       <td colspan="2" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_attr_getstack</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="3">2.38</td><td class="deleted">x</td>
+      <td colspan="3">2.38</td>
+      <td class="deleted">x</td>
       <td colspan="2" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_attr_getstackaddr</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="3">2.38</td><td class="deleted">x</td>
+      <td colspan="3">2.38</td>
+      <td class="deleted">x</td>
       <td colspan="2" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_attr_getstacksize</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="3">2.38</td><td class="deleted">x</td>
+      <td colspan="3">2.38</td>
+      <td class="deleted">x</td>
       <td colspan="2" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion moves">
       <td>libpthread</td>
       <td>pthread_attr_init</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="3">2.38</td><td class="deleted">x</td>
+      <td colspan="3">2.38</td>
+      <td class="deleted">x</td>
       <td colspan="2" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_attr_setdetachstate</td>
       <td colspan="22" class="empty"></td>
-      <td>2.38</td><td class="deleted">x</td>
+      <td>2.38</td>
+      <td class="deleted">x</td>
       <td colspan="4" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_attr_setguardsize</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="3">2.38</td><td class="deleted">x</td>
+      <td colspan="3">2.38</td>
+      <td class="deleted">x</td>
       <td colspan="2" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_attr_setinheritsched</td>
       <td colspan="22" class="empty"></td>
-      <td>2.38</td><td class="deleted">x</td>
+      <td>2.38</td>
+      <td class="deleted">x</td>
       <td colspan="4" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion moves">
       <td>libpthread</td>
       <td>pthread_attr_setschedparam</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="3">2.38</td><td class="deleted">x</td>
+      <td colspan="3">2.38</td>
+      <td class="deleted">x</td>
       <td colspan="2" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_attr_setschedpolicy</td>
       <td colspan="22" class="empty"></td>
-      <td>2.38</td><td class="deleted">x</td>
+      <td>2.38</td>
+      <td class="deleted">x</td>
       <td colspan="4" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion moves">
       <td>libpthread</td>
       <td>pthread_attr_setscope</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="3">2.38</td><td class="deleted">x</td>
+      <td colspan="3">2.38</td>
+      <td class="deleted">x</td>
       <td colspan="2" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_attr_setstack</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="3">2.38</td><td class="deleted">x</td>
+      <td colspan="3">2.38</td>
+      <td class="deleted">x</td>
       <td colspan="2" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_attr_setstackaddr</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="3">2.38</td><td class="deleted">x</td>
+      <td colspan="3">2.38</td>
+      <td class="deleted">x</td>
       <td colspan="2" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_attr_setstacksize</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="3">2.38</td><td class="deleted">x</td>
+      <td colspan="3">2.38</td>
+      <td class="deleted">x</td>
       <td colspan="2" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_barrier_destroy</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="4">2.38</td><td class="deleted">x</td>
+      <td colspan="4">2.38</td>
+      <td class="deleted">x</td>
       <td class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_barrier_init</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="4">2.38</td><td class="deleted">x</td>
+      <td colspan="4">2.38</td>
+      <td class="deleted">x</td>
       <td class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_barrier_wait</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="4">2.38</td><td class="deleted">x</td>
+      <td colspan="4">2.38</td>
+      <td class="deleted">x</td>
       <td class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_barrierattr_destroy</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="4">2.38</td><td class="deleted">x</td>
+      <td colspan="4">2.38</td>
+      <td class="deleted">x</td>
       <td class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_barrierattr_getpshared</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="4">2.38</td><td class="deleted">x</td>
+      <td colspan="4">2.38</td>
+      <td class="deleted">x</td>
       <td class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_barrierattr_init</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="4">2.38</td><td class="deleted">x</td>
+      <td colspan="4">2.38</td>
+      <td class="deleted">x</td>
       <td class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_barrierattr_setpshared</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="4">2.38</td><td class="deleted">x</td>
+      <td colspan="4">2.38</td>
+      <td class="deleted">x</td>
       <td class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_cancel</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_clockjoin_np</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion moves">
       <td>libpthread</td>
       <td>pthread_cond_broadcast</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="3">2.38</td><td class="deleted">x</td>
+      <td colspan="3">2.38</td>
+      <td class="deleted">x</td>
       <td colspan="2" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_cond_clockwait</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="3">2.38</td><td class="deleted">x</td>
+      <td colspan="3">2.38</td>
+      <td class="deleted">x</td>
       <td colspan="2" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion moves">
       <td>libpthread</td>
       <td>pthread_cond_destroy</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="3">2.38</td><td class="deleted">x</td>
+      <td colspan="3">2.38</td>
+      <td class="deleted">x</td>
       <td colspan="2" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion moves">
       <td>libpthread</td>
       <td>pthread_cond_init</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="3">2.38</td><td class="deleted">x</td>
+      <td colspan="3">2.38</td>
+      <td class="deleted">x</td>
       <td colspan="2" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion moves">
       <td>libpthread</td>
       <td>pthread_cond_signal</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="3">2.38</td><td class="deleted">x</td>
+      <td colspan="3">2.38</td>
+      <td class="deleted">x</td>
       <td colspan="2" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion moves">
       <td>libpthread</td>
       <td>pthread_cond_timedwait</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="3">2.38</td><td class="deleted">x</td>
+      <td colspan="3">2.38</td>
+      <td class="deleted">x</td>
       <td colspan="2" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion moves">
       <td>libpthread</td>
       <td>pthread_cond_wait</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="3">2.38</td><td class="deleted">x</td>
+      <td colspan="3">2.38</td>
+      <td class="deleted">x</td>
       <td colspan="2" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion moves">
       <td>libpthread</td>
       <td>pthread_condattr_destroy</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="3">2.38</td><td class="deleted">x</td>
+      <td colspan="3">2.38</td>
+      <td class="deleted">x</td>
       <td colspan="2" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_condattr_getclock</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="3">2.38</td><td class="deleted">x</td>
+      <td colspan="3">2.38</td>
+      <td class="deleted">x</td>
       <td colspan="2" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_condattr_getpshared</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="3">2.38</td><td class="deleted">x</td>
+      <td colspan="3">2.38</td>
+      <td class="deleted">x</td>
       <td colspan="2" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion moves">
       <td>libpthread</td>
       <td>pthread_condattr_init</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="3">2.38</td><td class="deleted">x</td>
+      <td colspan="3">2.38</td>
+      <td class="deleted">x</td>
       <td colspan="2" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_condattr_setclock</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="3">2.38</td><td class="deleted">x</td>
+      <td colspan="3">2.38</td>
+      <td class="deleted">x</td>
       <td colspan="2" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_condattr_setpshared</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="3">2.38</td><td class="deleted">x</td>
+      <td colspan="3">2.38</td>
+      <td class="deleted">x</td>
       <td colspan="2" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_create</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_detach</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_equal</td>
       <td colspan="22" class="empty"></td>
-      <td>2.38</td><td class="deleted">x</td>
+      <td>2.38</td>
+      <td class="deleted">x</td>
       <td colspan="4" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion moves">
       <td>libpthread</td>
       <td>pthread_exit</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_getattr_np</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_getconcurrency</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_getcpuclockid</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_getname_np</td>
       <td colspan="24" class="empty"></td>
-      <td colspan="3">2.40</td><td class="deleted">x</td>
+      <td colspan="3">2.40</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_getschedparam</td>
       <td colspan="22" class="empty"></td>
-      <td>2.38</td><td class="deleted">x</td>
+      <td>2.38</td>
+      <td class="deleted">x</td>
       <td colspan="4" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_getspecific</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="4">2.38</td><td class="deleted">x</td>
+      <td colspan="4">2.38</td>
+      <td class="deleted">x</td>
       <td class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_hurd_cond_timedwait_np</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_hurd_cond_wait_np</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_join</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_key_create</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="4">2.38</td><td class="deleted">x</td>
+      <td colspan="4">2.38</td>
+      <td class="deleted">x</td>
       <td class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_key_delete</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="4">2.38</td><td class="deleted">x</td>
+      <td colspan="4">2.38</td>
+      <td class="deleted">x</td>
       <td class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_kill</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_mutex_clocklock</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="4">2.38</td><td class="deleted">x</td>
+      <td colspan="4">2.38</td>
+      <td class="deleted">x</td>
       <td class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_mutex_consistent</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="4">2.38</td><td class="deleted">x</td>
+      <td colspan="4">2.38</td>
+      <td class="deleted">x</td>
       <td class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_mutex_consistent_np</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="4">2.38</td><td class="deleted">x</td>
+      <td colspan="4">2.38</td>
+      <td class="deleted">x</td>
       <td class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion moves">
       <td>libpthread</td>
       <td>pthread_mutex_destroy</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="4">2.38</td><td class="deleted">x</td>
+      <td colspan="4">2.38</td>
+      <td class="deleted">x</td>
       <td class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_mutex_getprioceiling</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="4">2.38</td><td class="deleted">x</td>
+      <td colspan="4">2.38</td>
+      <td class="deleted">x</td>
       <td class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion moves">
       <td>libpthread</td>
       <td>pthread_mutex_init</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="4">2.38</td><td class="deleted">x</td>
+      <td colspan="4">2.38</td>
+      <td class="deleted">x</td>
       <td class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion moves">
       <td>libpthread</td>
       <td>pthread_mutex_lock</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="4">2.38</td><td class="deleted">x</td>
+      <td colspan="4">2.38</td>
+      <td class="deleted">x</td>
       <td class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_mutex_setprioceiling</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="4">2.38</td><td class="deleted">x</td>
+      <td colspan="4">2.38</td>
+      <td class="deleted">x</td>
       <td class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_mutex_timedlock</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="4">2.38</td><td class="deleted">x</td>
+      <td colspan="4">2.38</td>
+      <td class="deleted">x</td>
       <td class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_mutex_transfer_np</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_mutex_trylock</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="4">2.38</td><td class="deleted">x</td>
+      <td colspan="4">2.38</td>
+      <td class="deleted">x</td>
       <td class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion moves">
       <td>libpthread</td>
       <td>pthread_mutex_unlock</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="4">2.38</td><td class="deleted">x</td>
+      <td colspan="4">2.38</td>
+      <td class="deleted">x</td>
       <td class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_mutexattr_destroy</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="3">2.38</td><td class="deleted">x</td>
+      <td colspan="3">2.38</td>
+      <td class="deleted">x</td>
       <td colspan="2" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_mutexattr_getprioceiling</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="3">2.38</td><td class="deleted">x</td>
+      <td colspan="3">2.38</td>
+      <td class="deleted">x</td>
       <td colspan="2" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_mutexattr_getprotocol</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="3">2.38</td><td class="deleted">x</td>
+      <td colspan="3">2.38</td>
+      <td class="deleted">x</td>
       <td colspan="2" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_mutexattr_getpshared</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="3">2.38</td><td class="deleted">x</td>
+      <td colspan="3">2.38</td>
+      <td class="deleted">x</td>
       <td colspan="2" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_mutexattr_getrobust</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="3">2.38</td><td class="deleted">x</td>
+      <td colspan="3">2.38</td>
+      <td class="deleted">x</td>
       <td colspan="2" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_mutexattr_getrobust_np</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="3">2.38</td><td class="deleted">x</td>
+      <td colspan="3">2.38</td>
+      <td class="deleted">x</td>
       <td colspan="2" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_mutexattr_gettype</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="3">2.38</td><td class="deleted">x</td>
+      <td colspan="3">2.38</td>
+      <td class="deleted">x</td>
       <td colspan="2" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_mutexattr_init</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="3">2.38</td><td class="deleted">x</td>
+      <td colspan="3">2.38</td>
+      <td class="deleted">x</td>
       <td colspan="2" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_mutexattr_setprioceiling</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="3">2.38</td><td class="deleted">x</td>
+      <td colspan="3">2.38</td>
+      <td class="deleted">x</td>
       <td colspan="2" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_mutexattr_setprotocol</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="3">2.38</td><td class="deleted">x</td>
+      <td colspan="3">2.38</td>
+      <td class="deleted">x</td>
       <td colspan="2" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_mutexattr_setpshared</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="3">2.38</td><td class="deleted">x</td>
+      <td colspan="3">2.38</td>
+      <td class="deleted">x</td>
       <td colspan="2" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_mutexattr_setrobust</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="3">2.38</td><td class="deleted">x</td>
+      <td colspan="3">2.38</td>
+      <td class="deleted">x</td>
       <td colspan="2" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_mutexattr_setrobust_np</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="3">2.38</td><td class="deleted">x</td>
+      <td colspan="3">2.38</td>
+      <td class="deleted">x</td>
       <td colspan="2" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_mutexattr_settype</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="3">2.38</td><td class="deleted">x</td>
+      <td colspan="3">2.38</td>
+      <td class="deleted">x</td>
       <td colspan="2" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_once</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="4">2.38</td><td class="deleted">x</td>
+      <td colspan="4">2.38</td>
+      <td class="deleted">x</td>
       <td class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_rwlock_clockrdlock</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="4">2.38</td><td class="deleted">x</td>
+      <td colspan="4">2.38</td>
+      <td class="deleted">x</td>
       <td class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_rwlock_clockwrlock</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="4">2.38</td><td class="deleted">x</td>
+      <td colspan="4">2.38</td>
+      <td class="deleted">x</td>
       <td class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_rwlock_destroy</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="4">2.38</td><td class="deleted">x</td>
+      <td colspan="4">2.38</td>
+      <td class="deleted">x</td>
       <td class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_rwlock_init</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="4">2.38</td><td class="deleted">x</td>
+      <td colspan="4">2.38</td>
+      <td class="deleted">x</td>
       <td class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_rwlock_rdlock</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="4">2.38</td><td class="deleted">x</td>
+      <td colspan="4">2.38</td>
+      <td class="deleted">x</td>
       <td class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_rwlock_timedrdlock</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="4">2.38</td><td class="deleted">x</td>
+      <td colspan="4">2.38</td>
+      <td class="deleted">x</td>
       <td class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_rwlock_timedwrlock</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="4">2.38</td><td class="deleted">x</td>
+      <td colspan="4">2.38</td>
+      <td class="deleted">x</td>
       <td class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_rwlock_tryrdlock</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="4">2.38</td><td class="deleted">x</td>
+      <td colspan="4">2.38</td>
+      <td class="deleted">x</td>
       <td class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_rwlock_trywrlock</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="4">2.38</td><td class="deleted">x</td>
+      <td colspan="4">2.38</td>
+      <td class="deleted">x</td>
       <td class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_rwlock_unlock</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="4">2.38</td><td class="deleted">x</td>
+      <td colspan="4">2.38</td>
+      <td class="deleted">x</td>
       <td class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_rwlock_wrlock</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="4">2.38</td><td class="deleted">x</td>
+      <td colspan="4">2.38</td>
+      <td class="deleted">x</td>
       <td class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_rwlockattr_destroy</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="4">2.38</td><td class="deleted">x</td>
+      <td colspan="4">2.38</td>
+      <td class="deleted">x</td>
       <td class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_rwlockattr_getpshared</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="4">2.38</td><td class="deleted">x</td>
+      <td colspan="4">2.38</td>
+      <td class="deleted">x</td>
       <td class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_rwlockattr_init</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="4">2.38</td><td class="deleted">x</td>
+      <td colspan="4">2.38</td>
+      <td class="deleted">x</td>
       <td class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_rwlockattr_setpshared</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="4">2.38</td><td class="deleted">x</td>
+      <td colspan="4">2.38</td>
+      <td class="deleted">x</td>
       <td class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion moves">
       <td>libpthread</td>
       <td>pthread_setcancelstate</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="4">2.38</td><td class="deleted">x</td>
+      <td colspan="4">2.38</td>
+      <td class="deleted">x</td>
       <td class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion moves">
       <td>libpthread</td>
       <td>pthread_setcanceltype</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="4">2.38</td><td class="deleted">x</td>
+      <td colspan="4">2.38</td>
+      <td class="deleted">x</td>
       <td class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_setconcurrency</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_setname_np</td>
       <td colspan="24" class="empty"></td>
-      <td colspan="3">2.40</td><td class="deleted">x</td>
+      <td colspan="3">2.40</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_setschedparam</td>
       <td colspan="22" class="empty"></td>
-      <td>2.38</td><td class="deleted">x</td>
+      <td>2.38</td>
+      <td class="deleted">x</td>
       <td colspan="4" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_setschedprio</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_setspecific</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="4">2.38</td><td class="deleted">x</td>
+      <td colspan="4">2.38</td>
+      <td class="deleted">x</td>
       <td class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_sigmask</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="3">2.38</td><td class="deleted">x</td>
+      <td colspan="3">2.38</td>
+      <td class="deleted">x</td>
       <td colspan="2" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_spin_destroy</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_spin_init</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_spin_lock</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_spin_trylock</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_spin_unlock</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_testcancel</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_timedjoin_np</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_tryjoin_np</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>pthread_yield</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>sem_clockwait</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>sem_close</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>sem_destroy</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>sem_getvalue</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>sem_init</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>sem_open</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>sem_post</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>sem_timedwait</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>sem_trywait</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>sem_unlink</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>sem_wait</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>thrd_create</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>thrd_detach</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>thrd_exit</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>thrd_join</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>tss_create</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>tss_delete</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>tss_get</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libpthread</td>
       <td>tss_set</td>
       <td colspan="22" class="empty"></td>
-      <td colspan="5">2.38</td><td class="deleted">x</td>
+      <td colspan="5">2.38</td>
+      <td class="deleted">x</td>
     </tr>
     <tr>
       <td>libresolv</td>

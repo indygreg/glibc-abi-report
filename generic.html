@@ -48,7 +48,8 @@ function archVersionsOnLoad() {
   <div>
     <span>
       <input id="omnipresent" type="checkbox" onchange="omnipresentChanged(this)">
-      <label for="omnipresent">Hide Omnipresent</label></span>
+      <label for="omnipresent">Hide Omnipresent</label>
+    </span>
   </div>
   <table>
     <tr>
@@ -84,11 +85,12 @@ function archVersionsOnLoad() {
       <th>2.43</th>
       
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libc</td>
       <td>__libc_single_threaded</td>
       <td colspan="16" class="empty"></td>
-      <td colspan="2">2.32</td><td class="deleted">x</td>
+      <td colspan="2">2.32</td>
+      <td class="deleted">x</td>
       <td colspan="9" class="empty"></td>
     </tr>
     <tr>

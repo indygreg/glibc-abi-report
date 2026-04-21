@@ -48,7 +48,8 @@ function archVersionsOnLoad() {
   <div>
     <span>
       <input id="omnipresent" type="checkbox" onchange="omnipresentChanged(this)">
-      <label for="omnipresent">Hide Omnipresent</label></span>
+      <label for="omnipresent">Hide Omnipresent</label>
+    </span>
   </div>
   <table>
     <tr>
@@ -1176,23 +1177,23 @@ function archVersionsOnLoad() {
       <td colspan="4" class="empty"></td>
       <td colspan="24">2.0</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>__dn_comp</td>
       <td colspan="18" class="empty"></td>
-      <td colspan="10">2.0</td>
+      <td colspan="10">2.0 (moved from libresolv)</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>__dn_expand</td>
       <td colspan="18" class="empty"></td>
-      <td colspan="10">2.2</td>
+      <td colspan="10">2.2 (moved from libresolv)</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>__dn_skipname</td>
       <td colspan="18" class="empty"></td>
-      <td colspan="10">2.0</td>
+      <td colspan="10">2.0 (moved from libresolv)</td>
     </tr>
     <tr>
       <td>libc</td>
@@ -1374,7 +1375,7 @@ function archVersionsOnLoad() {
       <td colspan="4" class="empty"></td>
       <td colspan="24">2.2</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>__free_hook</td>
       <td colspan="4" class="empty"></td>
@@ -2161,7 +2162,7 @@ function archVersionsOnLoad() {
       <td colspan="4" class="empty"></td>
       <td colspan="24">2.2</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>__malloc_hook</td>
       <td colspan="4" class="empty"></td>
@@ -2203,7 +2204,7 @@ function archVersionsOnLoad() {
       <td colspan="4" class="empty"></td>
       <td colspan="24">2.4</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>__memalign_hook</td>
       <td colspan="4" class="empty"></td>
@@ -2665,7 +2666,7 @@ function archVersionsOnLoad() {
       <td colspan="4" class="empty"></td>
       <td colspan="24">2.5</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>__realloc_hook</td>
       <td colspan="4" class="empty"></td>
@@ -2719,17 +2720,17 @@ function archVersionsOnLoad() {
       <td colspan="4" class="empty"></td>
       <td colspan="24">2.0</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>__res_dnok</td>
       <td colspan="18" class="empty"></td>
-      <td colspan="10">2.0</td>
+      <td colspan="10">2.0 (moved from libresolv)</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>__res_hnok</td>
       <td colspan="18" class="empty"></td>
-      <td colspan="10">2.0</td>
+      <td colspan="10">2.0 (moved from libresolv)</td>
     </tr>
     <tr>
       <td>libc</td>
@@ -2737,17 +2738,17 @@ function archVersionsOnLoad() {
       <td colspan="4" class="empty"></td>
       <td colspan="24">2.2</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>__res_mailok</td>
       <td colspan="18" class="empty"></td>
-      <td colspan="10">2.0</td>
+      <td colspan="10">2.0 (moved from libresolv)</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>__res_mkquery</td>
       <td colspan="18" class="empty"></td>
-      <td colspan="10">2.2</td>
+      <td colspan="10">2.2 (moved from libresolv)</td>
     </tr>
     <tr>
       <td>libc</td>
@@ -2761,53 +2762,53 @@ function archVersionsOnLoad() {
       <td colspan="4" class="empty"></td>
       <td colspan="24">2.2</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>__res_nmkquery</td>
       <td colspan="18" class="empty"></td>
-      <td colspan="10">2.2</td>
+      <td colspan="10">2.2 (moved from libresolv)</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>__res_nquery</td>
       <td colspan="18" class="empty"></td>
-      <td colspan="10">2.2</td>
+      <td colspan="10">2.2 (moved from libresolv)</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>__res_nquerydomain</td>
       <td colspan="18" class="empty"></td>
-      <td colspan="10">2.2</td>
+      <td colspan="10">2.2 (moved from libresolv)</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>__res_nsearch</td>
       <td colspan="18" class="empty"></td>
-      <td colspan="10">2.2</td>
+      <td colspan="10">2.2 (moved from libresolv)</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>__res_nsend</td>
       <td colspan="18" class="empty"></td>
-      <td colspan="10">2.2</td>
+      <td colspan="10">2.2 (moved from libresolv)</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>__res_ownok</td>
       <td colspan="18" class="empty"></td>
-      <td colspan="10">2.0</td>
+      <td colspan="10">2.0 (moved from libresolv)</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>__res_query</td>
       <td colspan="18" class="empty"></td>
-      <td colspan="10">2.2</td>
+      <td colspan="10">2.2 (moved from libresolv)</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>__res_querydomain</td>
       <td colspan="18" class="empty"></td>
-      <td colspan="10">2.2</td>
+      <td colspan="10">2.2 (moved from libresolv)</td>
     </tr>
     <tr>
       <td>libc</td>
@@ -2815,17 +2816,17 @@ function archVersionsOnLoad() {
       <td colspan="4" class="empty"></td>
       <td colspan="24">2.0</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>__res_search</td>
       <td colspan="18" class="empty"></td>
-      <td colspan="10">2.2</td>
+      <td colspan="10">2.2 (moved from libresolv)</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>__res_send</td>
       <td colspan="18" class="empty"></td>
-      <td colspan="10">2.0</td>
+      <td colspan="10">2.0 (moved from libresolv)</td>
     </tr>
     <tr>
       <td>libc</td>
@@ -4243,7 +4244,7 @@ function archVersionsOnLoad() {
       <td colspan="4" class="empty"></td>
       <td colspan="24">2.0</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>aligned_alloc</td>
       <td colspan="4" class="empty"></td>
@@ -4627,7 +4628,7 @@ function archVersionsOnLoad() {
       <td colspan="18" class="empty"></td>
       <td colspan="10">2.28, 2.34</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>calloc</td>
       <td colspan="4" class="empty"></td>
@@ -5213,11 +5214,11 @@ function archVersionsOnLoad() {
       <td colspan="18" class="empty"></td>
       <td colspan="10">2.34</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>dn_expand</td>
       <td colspan="18" class="empty"></td>
-      <td colspan="10">2.0, 2.34</td>
+      <td colspan="10">2.0 (moved from libresolv), 2.34</td>
     </tr>
     <tr>
       <td>libc</td>
@@ -6138,7 +6139,7 @@ function archVersionsOnLoad() {
       <td colspan="4" class="empty"></td>
       <td colspan="24">2.2</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>free</td>
       <td colspan="4" class="empty"></td>
@@ -8756,63 +8757,65 @@ function archVersionsOnLoad() {
       <td colspan="4" class="empty"></td>
       <td colspan="24">2.2</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>mallinfo</td>
       <td colspan="4" class="empty"></td>
       <td colspan="24">2.0</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>mallinfo2</td>
       <td colspan="17" class="empty"></td>
       <td colspan="11">2.33</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>malloc</td>
       <td colspan="4" class="empty"></td>
       <td colspan="24">2.0</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libc</td>
       <td>malloc_get_state</td>
       <td colspan="4" class="empty"></td>
-      <td colspan="14">2.0</td><td class="deleted">x</td>
+      <td colspan="14">2.0</td>
+      <td class="deleted">x</td>
       <td colspan="9" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>malloc_info</td>
       <td colspan="4" class="empty"></td>
       <td colspan="24">2.10</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libc</td>
       <td>malloc_set_state</td>
       <td colspan="4" class="empty"></td>
-      <td colspan="14">2.0</td><td class="deleted">x</td>
+      <td colspan="14">2.0</td>
+      <td class="deleted">x</td>
       <td colspan="9" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>malloc_stats</td>
       <td colspan="4" class="empty"></td>
       <td colspan="24">2.0</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>malloc_trim</td>
       <td colspan="4" class="empty"></td>
       <td colspan="24">2.0</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>malloc_usable_size</td>
       <td colspan="4" class="empty"></td>
       <td colspan="24">2.0</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>mallopt</td>
       <td colspan="4" class="empty"></td>
@@ -8890,25 +8893,25 @@ function archVersionsOnLoad() {
       <td colspan="4" class="empty"></td>
       <td colspan="24">2.0</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>mcheck</td>
       <td colspan="4" class="empty"></td>
       <td colspan="24">2.0</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>mcheck_check_all</td>
       <td colspan="4" class="empty"></td>
       <td colspan="24">2.2</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>mcheck_pedantic</td>
       <td colspan="4" class="empty"></td>
       <td colspan="24">2.2</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>memalign</td>
       <td colspan="4" class="empty"></td>
@@ -9178,7 +9181,7 @@ function archVersionsOnLoad() {
       <td colspan="20" class="empty"></td>
       <td colspan="8">2.36</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>mprobe</td>
       <td colspan="4" class="empty"></td>
@@ -9304,7 +9307,7 @@ function archVersionsOnLoad() {
       <td colspan="4" class="empty"></td>
       <td colspan="24">2.0</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>mtrace</td>
       <td colspan="4" class="empty"></td>
@@ -9364,7 +9367,7 @@ function archVersionsOnLoad() {
       <td colspan="4" class="empty"></td>
       <td colspan="24">2.0</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>muntrace</td>
       <td colspan="4" class="empty"></td>
@@ -9454,47 +9457,47 @@ function archVersionsOnLoad() {
       <td colspan="4" class="empty"></td>
       <td colspan="24">2.0</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>ns_name_compress</td>
       <td colspan="18" class="empty"></td>
-      <td colspan="10">2.9, 2.34</td>
+      <td colspan="10">2.9 (moved from libresolv), 2.34</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>ns_name_ntop</td>
       <td colspan="18" class="empty"></td>
-      <td colspan="10">2.9, 2.34</td>
+      <td colspan="10">2.9 (moved from libresolv), 2.34</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>ns_name_pack</td>
       <td colspan="18" class="empty"></td>
-      <td colspan="10">2.9, 2.34</td>
+      <td colspan="10">2.9 (moved from libresolv), 2.34</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>ns_name_pton</td>
       <td colspan="18" class="empty"></td>
-      <td colspan="10">2.9, 2.34</td>
+      <td colspan="10">2.9 (moved from libresolv), 2.34</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>ns_name_skip</td>
       <td colspan="18" class="empty"></td>
-      <td colspan="10">2.9, 2.34</td>
+      <td colspan="10">2.9 (moved from libresolv), 2.34</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>ns_name_uncompress</td>
       <td colspan="18" class="empty"></td>
-      <td colspan="10">2.9, 2.34</td>
+      <td colspan="10">2.9 (moved from libresolv), 2.34</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>ns_name_unpack</td>
       <td colspan="18" class="empty"></td>
-      <td colspan="10">2.9, 2.34</td>
+      <td colspan="10">2.9 (moved from libresolv), 2.34</td>
     </tr>
     <tr>
       <td>libc</td>
@@ -9856,7 +9859,7 @@ function archVersionsOnLoad() {
       <td colspan="4" class="empty"></td>
       <td colspan="24">2.2</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>posix_memalign</td>
       <td colspan="4" class="empty"></td>
@@ -11086,7 +11089,7 @@ function archVersionsOnLoad() {
       <td colspan="4" class="empty"></td>
       <td colspan="24">2.2</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pvalloc</td>
       <td colspan="4" class="empty"></td>
@@ -11363,7 +11366,7 @@ function archVersionsOnLoad() {
       <td colspan="4" class="empty"></td>
       <td colspan="24">2.0</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>realloc</td>
       <td colspan="4" class="empty"></td>
@@ -11531,11 +11534,11 @@ function archVersionsOnLoad() {
       <td colspan="18" class="empty"></td>
       <td colspan="10">2.34</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>res_mkquery</td>
       <td colspan="18" class="empty"></td>
-      <td colspan="10">2.0, 2.34</td>
+      <td colspan="10">2.0 (moved from libresolv), 2.34</td>
     </tr>
     <tr>
       <td>libc</td>
@@ -11573,23 +11576,23 @@ function archVersionsOnLoad() {
       <td colspan="18" class="empty"></td>
       <td colspan="10">2.34</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>res_query</td>
       <td colspan="18" class="empty"></td>
-      <td colspan="10">2.0, 2.34</td>
+      <td colspan="10">2.0 (moved from libresolv), 2.34</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>res_querydomain</td>
       <td colspan="18" class="empty"></td>
-      <td colspan="10">2.0, 2.34</td>
+      <td colspan="10">2.0 (moved from libresolv), 2.34</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>res_search</td>
       <td colspan="18" class="empty"></td>
-      <td colspan="10">2.0, 2.34</td>
+      <td colspan="10">2.0 (moved from libresolv), 2.34</td>
     </tr>
     <tr>
       <td>libc</td>
@@ -14593,7 +14596,7 @@ function archVersionsOnLoad() {
       <td colspan="4" class="empty"></td>
       <td colspan="24">2.2</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>valloc</td>
       <td colspan="4" class="empty"></td>
@@ -15745,47 +15748,47 @@ function archVersionsOnLoad() {
       <td colspan="4" class="empty"></td>
       <td colspan="24">2.0</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>__free_hook</td>
       <td colspan="18" class="empty"></td>
-      <td colspan="10">2.0</td>
+      <td colspan="10">2.0 (moved from libc)</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>__malloc_hook</td>
       <td colspan="18" class="empty"></td>
-      <td colspan="10">2.0</td>
+      <td colspan="10">2.0 (moved from libc)</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>__memalign_hook</td>
       <td colspan="18" class="empty"></td>
-      <td colspan="10">2.0</td>
+      <td colspan="10">2.0 (moved from libc)</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>__realloc_hook</td>
       <td colspan="18" class="empty"></td>
-      <td colspan="10">2.0</td>
+      <td colspan="10">2.0 (moved from libc)</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>aligned_alloc</td>
       <td colspan="18" class="empty"></td>
-      <td colspan="10">2.16</td>
+      <td colspan="10">2.16 (moved from libc)</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>calloc</td>
       <td colspan="18" class="empty"></td>
-      <td colspan="10">2.0</td>
+      <td colspan="10">2.0 (moved from libc)</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>free</td>
       <td colspan="18" class="empty"></td>
-      <td colspan="10">2.0</td>
+      <td colspan="10">2.0 (moved from libc)</td>
     </tr>
     <tr>
       <td>libc_malloc_debug</td>
@@ -15799,131 +15802,131 @@ function archVersionsOnLoad() {
       <td colspan="27" class="empty"></td>
       <td>2.43</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>mallinfo</td>
       <td colspan="18" class="empty"></td>
-      <td colspan="10">2.0</td>
+      <td colspan="10">2.0 (moved from libc)</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>mallinfo2</td>
       <td colspan="18" class="empty"></td>
-      <td colspan="10">2.33</td>
+      <td colspan="10">2.33 (moved from libc)</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>malloc</td>
       <td colspan="18" class="empty"></td>
-      <td colspan="10">2.0</td>
+      <td colspan="10">2.0 (moved from libc)</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>malloc_get_state</td>
       <td colspan="18" class="empty"></td>
-      <td colspan="10">2.0</td>
+      <td colspan="10">2.0 (moved from libc)</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>malloc_info</td>
       <td colspan="18" class="empty"></td>
-      <td colspan="10">2.10</td>
+      <td colspan="10">2.10 (moved from libc)</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>malloc_set_state</td>
       <td colspan="18" class="empty"></td>
-      <td colspan="10">2.0</td>
+      <td colspan="10">2.0 (moved from libc)</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>malloc_stats</td>
       <td colspan="18" class="empty"></td>
-      <td colspan="10">2.0</td>
+      <td colspan="10">2.0 (moved from libc)</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>malloc_trim</td>
       <td colspan="18" class="empty"></td>
-      <td colspan="10">2.0</td>
+      <td colspan="10">2.0 (moved from libc)</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>malloc_usable_size</td>
       <td colspan="18" class="empty"></td>
-      <td colspan="10">2.0</td>
+      <td colspan="10">2.0 (moved from libc)</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>mallopt</td>
       <td colspan="18" class="empty"></td>
-      <td colspan="10">2.0</td>
+      <td colspan="10">2.0 (moved from libc)</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>mcheck</td>
       <td colspan="18" class="empty"></td>
-      <td colspan="10">2.0</td>
+      <td colspan="10">2.0 (moved from libc)</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>mcheck_check_all</td>
       <td colspan="18" class="empty"></td>
-      <td colspan="10">2.2</td>
+      <td colspan="10">2.2 (moved from libc)</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>mcheck_pedantic</td>
       <td colspan="18" class="empty"></td>
-      <td colspan="10">2.2</td>
+      <td colspan="10">2.2 (moved from libc)</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>memalign</td>
       <td colspan="18" class="empty"></td>
-      <td colspan="10">2.0</td>
+      <td colspan="10">2.0 (moved from libc)</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>mprobe</td>
       <td colspan="18" class="empty"></td>
-      <td colspan="10">2.0</td>
+      <td colspan="10">2.0 (moved from libc)</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>mtrace</td>
       <td colspan="18" class="empty"></td>
-      <td colspan="10">2.0</td>
+      <td colspan="10">2.0 (moved from libc)</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>muntrace</td>
       <td colspan="18" class="empty"></td>
-      <td colspan="10">2.0</td>
+      <td colspan="10">2.0 (moved from libc)</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>posix_memalign</td>
       <td colspan="18" class="empty"></td>
-      <td colspan="10">2.2</td>
+      <td colspan="10">2.2 (moved from libc)</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>pvalloc</td>
       <td colspan="18" class="empty"></td>
-      <td colspan="10">2.0</td>
+      <td colspan="10">2.0 (moved from libc)</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>realloc</td>
       <td colspan="18" class="empty"></td>
-      <td colspan="10">2.0</td>
+      <td colspan="10">2.0 (moved from libc)</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>valloc</td>
       <td colspan="18" class="empty"></td>
-      <td colspan="10">2.0</td>
+      <td colspan="10">2.0 (moved from libc)</td>
     </tr>
     <tr>
       <td>libresolv</td>
@@ -15937,11 +15940,12 @@ function archVersionsOnLoad() {
       <td colspan="4" class="empty"></td>
       <td colspan="24">2.0</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libresolv</td>
       <td>__dn_comp</td>
       <td colspan="4" class="empty"></td>
-      <td colspan="14">2.0</td><td class="deleted">x</td>
+      <td colspan="14">2.0</td>
+      <td class="deleted">x</td>
       <td colspan="9" class="empty"></td>
     </tr>
     <tr>
@@ -15950,18 +15954,20 @@ function archVersionsOnLoad() {
       <td colspan="4" class="empty"></td>
       <td colspan="24">2.0</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libresolv</td>
       <td>__dn_expand</td>
       <td colspan="4" class="empty"></td>
-      <td colspan="14">2.2</td><td class="deleted">x</td>
+      <td colspan="14">2.2</td>
+      <td class="deleted">x</td>
       <td colspan="9" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libresolv</td>
       <td>__dn_skipname</td>
       <td colspan="4" class="empty"></td>
-      <td colspan="14">2.0</td><td class="deleted">x</td>
+      <td colspan="14">2.0</td>
+      <td class="deleted">x</td>
       <td colspan="9" class="empty"></td>
     </tr>
     <tr>
@@ -16096,18 +16102,20 @@ function archVersionsOnLoad() {
       <td colspan="4" class="empty"></td>
       <td colspan="24">2.0</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libresolv</td>
       <td>__res_dnok</td>
       <td colspan="4" class="empty"></td>
-      <td colspan="14">2.0</td><td class="deleted">x</td>
+      <td colspan="14">2.0</td>
+      <td class="deleted">x</td>
       <td colspan="9" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libresolv</td>
       <td>__res_hnok</td>
       <td colspan="4" class="empty"></td>
-      <td colspan="14">2.0</td><td class="deleted">x</td>
+      <td colspan="14">2.0</td>
+      <td class="deleted">x</td>
       <td colspan="9" class="empty"></td>
     </tr>
     <tr>
@@ -16122,18 +16130,20 @@ function archVersionsOnLoad() {
       <td colspan="4" class="empty"></td>
       <td colspan="24">2.0</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libresolv</td>
       <td>__res_mailok</td>
       <td colspan="4" class="empty"></td>
-      <td colspan="14">2.0</td><td class="deleted">x</td>
+      <td colspan="14">2.0</td>
+      <td class="deleted">x</td>
       <td colspan="9" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libresolv</td>
       <td>__res_mkquery</td>
       <td colspan="4" class="empty"></td>
-      <td colspan="14">2.2</td><td class="deleted">x</td>
+      <td colspan="14">2.2</td>
+      <td class="deleted">x</td>
       <td colspan="9" class="empty"></td>
     </tr>
     <tr>
@@ -16142,46 +16152,52 @@ function archVersionsOnLoad() {
       <td colspan="4" class="empty"></td>
       <td colspan="24">2.0</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libresolv</td>
       <td>__res_nmkquery</td>
       <td colspan="4" class="empty"></td>
-      <td colspan="14">2.2</td><td class="deleted">x</td>
+      <td colspan="14">2.2</td>
+      <td class="deleted">x</td>
       <td colspan="9" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libresolv</td>
       <td>__res_nquery</td>
       <td colspan="4" class="empty"></td>
-      <td colspan="14">2.2</td><td class="deleted">x</td>
+      <td colspan="14">2.2</td>
+      <td class="deleted">x</td>
       <td colspan="9" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libresolv</td>
       <td>__res_nquerydomain</td>
       <td colspan="4" class="empty"></td>
-      <td colspan="14">2.2</td><td class="deleted">x</td>
+      <td colspan="14">2.2</td>
+      <td class="deleted">x</td>
       <td colspan="9" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libresolv</td>
       <td>__res_nsearch</td>
       <td colspan="4" class="empty"></td>
-      <td colspan="14">2.2</td><td class="deleted">x</td>
+      <td colspan="14">2.2</td>
+      <td class="deleted">x</td>
       <td colspan="9" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libresolv</td>
       <td>__res_nsend</td>
       <td colspan="4" class="empty"></td>
-      <td colspan="14">2.2</td><td class="deleted">x</td>
+      <td colspan="14">2.2</td>
+      <td class="deleted">x</td>
       <td colspan="9" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libresolv</td>
       <td>__res_ownok</td>
       <td colspan="4" class="empty"></td>
-      <td colspan="14">2.0</td><td class="deleted">x</td>
+      <td colspan="14">2.0</td>
+      <td class="deleted">x</td>
       <td colspan="9" class="empty"></td>
     </tr>
     <tr>
@@ -16190,32 +16206,36 @@ function archVersionsOnLoad() {
       <td colspan="4" class="empty"></td>
       <td colspan="24">2.0</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libresolv</td>
       <td>__res_query</td>
       <td colspan="4" class="empty"></td>
-      <td colspan="14">2.2</td><td class="deleted">x</td>
+      <td colspan="14">2.2</td>
+      <td class="deleted">x</td>
       <td colspan="9" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libresolv</td>
       <td>__res_querydomain</td>
       <td colspan="4" class="empty"></td>
-      <td colspan="14">2.2</td><td class="deleted">x</td>
+      <td colspan="14">2.2</td>
+      <td class="deleted">x</td>
       <td colspan="9" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libresolv</td>
       <td>__res_search</td>
       <td colspan="4" class="empty"></td>
-      <td colspan="14">2.2</td><td class="deleted">x</td>
+      <td colspan="14">2.2</td>
+      <td class="deleted">x</td>
       <td colspan="9" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libresolv</td>
       <td>__res_send</td>
       <td colspan="4" class="empty"></td>
-      <td colspan="14">2.0</td><td class="deleted">x</td>
+      <td colspan="14">2.0</td>
+      <td class="deleted">x</td>
       <td colspan="9" class="empty"></td>
     </tr>
     <tr>
@@ -16284,11 +16304,12 @@ function archVersionsOnLoad() {
       <td colspan="4" class="empty"></td>
       <td colspan="24">2.0</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libresolv</td>
       <td>dn_expand</td>
       <td colspan="4" class="empty"></td>
-      <td colspan="14">2.0</td><td class="deleted">x</td>
+      <td colspan="14">2.0</td>
+      <td class="deleted">x</td>
       <td colspan="9" class="empty"></td>
     </tr>
     <tr>
@@ -16351,11 +16372,12 @@ function archVersionsOnLoad() {
       <td colspan="4" class="empty"></td>
       <td colspan="24">2.9</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libresolv</td>
       <td>ns_name_compress</td>
       <td colspan="4" class="empty"></td>
-      <td colspan="14">2.9</td><td class="deleted">x</td>
+      <td colspan="14">2.9</td>
+      <td class="deleted">x</td>
       <td colspan="9" class="empty"></td>
     </tr>
     <tr>
@@ -16364,25 +16386,28 @@ function archVersionsOnLoad() {
       <td colspan="4" class="empty"></td>
       <td colspan="24">2.9</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libresolv</td>
       <td>ns_name_ntop</td>
       <td colspan="4" class="empty"></td>
-      <td colspan="14">2.9</td><td class="deleted">x</td>
+      <td colspan="14">2.9</td>
+      <td class="deleted">x</td>
       <td colspan="9" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libresolv</td>
       <td>ns_name_pack</td>
       <td colspan="4" class="empty"></td>
-      <td colspan="14">2.9</td><td class="deleted">x</td>
+      <td colspan="14">2.9</td>
+      <td class="deleted">x</td>
       <td colspan="9" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libresolv</td>
       <td>ns_name_pton</td>
       <td colspan="4" class="empty"></td>
-      <td colspan="14">2.9</td><td class="deleted">x</td>
+      <td colspan="14">2.9</td>
+      <td class="deleted">x</td>
       <td colspan="9" class="empty"></td>
     </tr>
     <tr>
@@ -16391,25 +16416,28 @@ function archVersionsOnLoad() {
       <td colspan="4" class="empty"></td>
       <td colspan="24">2.9</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libresolv</td>
       <td>ns_name_skip</td>
       <td colspan="4" class="empty"></td>
-      <td colspan="14">2.9</td><td class="deleted">x</td>
+      <td colspan="14">2.9</td>
+      <td class="deleted">x</td>
       <td colspan="9" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libresolv</td>
       <td>ns_name_uncompress</td>
       <td colspan="4" class="empty"></td>
-      <td colspan="14">2.9</td><td class="deleted">x</td>
+      <td colspan="14">2.9</td>
+      <td class="deleted">x</td>
       <td colspan="9" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libresolv</td>
       <td>ns_name_unpack</td>
       <td colspan="4" class="empty"></td>
-      <td colspan="14">2.9</td><td class="deleted">x</td>
+      <td colspan="14">2.9</td>
+      <td class="deleted">x</td>
       <td colspan="9" class="empty"></td>
     </tr>
     <tr>
@@ -16490,32 +16518,36 @@ function archVersionsOnLoad() {
       <td colspan="4" class="empty"></td>
       <td colspan="24">2.0</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libresolv</td>
       <td>res_mkquery</td>
       <td colspan="4" class="empty"></td>
-      <td colspan="14">2.0</td><td class="deleted">x</td>
+      <td colspan="14">2.0</td>
+      <td class="deleted">x</td>
       <td colspan="9" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libresolv</td>
       <td>res_query</td>
       <td colspan="4" class="empty"></td>
-      <td colspan="14">2.0</td><td class="deleted">x</td>
+      <td colspan="14">2.0</td>
+      <td class="deleted">x</td>
       <td colspan="9" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libresolv</td>
       <td>res_querydomain</td>
       <td colspan="4" class="empty"></td>
-      <td colspan="14">2.0</td><td class="deleted">x</td>
+      <td colspan="14">2.0</td>
+      <td class="deleted">x</td>
       <td colspan="9" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libresolv</td>
       <td>res_search</td>
       <td colspan="4" class="empty"></td>
-      <td colspan="14">2.0</td><td class="deleted">x</td>
+      <td colspan="14">2.0</td>
+      <td class="deleted">x</td>
       <td colspan="9" class="empty"></td>
     </tr>
     <tr>

@@ -48,7 +48,8 @@ function archVersionsOnLoad() {
   <div>
     <span>
       <input id="omnipresent" type="checkbox" onchange="omnipresentChanged(this)">
-      <label for="omnipresent">Hide Omnipresent</label></span>
+      <label for="omnipresent">Hide Omnipresent</label>
+    </span>
   </div>
   <table>
     <tr>
@@ -84,7 +85,7 @@ function archVersionsOnLoad() {
       <th>2.43</th>
       
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libBrokenLocale</td>
       <td>__ctype_get_mb_cur_max</td>
       <td colspan="19" class="empty"></td>
@@ -1008,7 +1009,7 @@ function archVersionsOnLoad() {
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>__ctype_get_mb_cur_max</td>
       <td colspan="19" class="empty"></td>
@@ -1182,13 +1183,13 @@ function archVersionsOnLoad() {
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>__finite</td>
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>__finitef</td>
       <td colspan="19" class="empty"></td>
@@ -2454,13 +2455,13 @@ function archVersionsOnLoad() {
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>__signbit</td>
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>__signbitf</td>
       <td colspan="19" class="empty"></td>
@@ -3528,7 +3529,7 @@ function archVersionsOnLoad() {
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>aligned_alloc</td>
       <td colspan="19" class="empty"></td>
@@ -3852,7 +3853,7 @@ function archVersionsOnLoad() {
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>calloc</td>
       <td colspan="19" class="empty"></td>
@@ -4145,19 +4146,19 @@ function archVersionsOnLoad() {
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>copysign</td>
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>copysignf</td>
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>copysignl</td>
       <td colspan="19" class="empty"></td>
@@ -5075,19 +5076,19 @@ function archVersionsOnLoad() {
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>finite</td>
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>finitef</td>
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>finitel</td>
       <td colspan="19" class="empty"></td>
@@ -5231,7 +5232,7 @@ function archVersionsOnLoad() {
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>free</td>
       <td colspan="19" class="empty"></td>
@@ -5285,19 +5286,19 @@ function archVersionsOnLoad() {
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>frexp</td>
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>frexpf</td>
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>frexpl</td>
       <td colspan="19" class="empty"></td>
@@ -7488,19 +7489,19 @@ function archVersionsOnLoad() {
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>ldexp</td>
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>ldexpf</td>
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>ldexpl</td>
       <td colspan="19" class="empty"></td>
@@ -7711,49 +7712,49 @@ function archVersionsOnLoad() {
       <td colspan="5">2.35</td>
       <td colspan="4">2.35, 2.40</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>mallinfo</td>
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>mallinfo2</td>
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>malloc</td>
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>malloc_info</td>
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>malloc_stats</td>
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>malloc_trim</td>
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>malloc_usable_size</td>
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>mallopt</td>
       <td colspan="19" class="empty"></td>
@@ -7825,25 +7826,25 @@ function archVersionsOnLoad() {
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>mcheck</td>
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>mcheck_check_all</td>
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>mcheck_pedantic</td>
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>memalign</td>
       <td colspan="19" class="empty"></td>
@@ -8065,19 +8066,19 @@ function archVersionsOnLoad() {
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>modf</td>
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>modff</td>
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>modfl</td>
       <td colspan="19" class="empty"></td>
@@ -8113,7 +8114,7 @@ function archVersionsOnLoad() {
       <td colspan="20" class="empty"></td>
       <td colspan="8">2.36</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>mprobe</td>
       <td colspan="19" class="empty"></td>
@@ -8239,7 +8240,7 @@ function archVersionsOnLoad() {
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>mtrace</td>
       <td colspan="19" class="empty"></td>
@@ -8299,7 +8300,7 @@ function archVersionsOnLoad() {
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>muntrace</td>
       <td colspan="19" class="empty"></td>
@@ -8737,7 +8738,7 @@ function archVersionsOnLoad() {
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>posix_memalign</td>
       <td colspan="19" class="empty"></td>
@@ -9907,7 +9908,7 @@ function archVersionsOnLoad() {
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>pvalloc</td>
       <td colspan="19" class="empty"></td>
@@ -10171,7 +10172,7 @@ function archVersionsOnLoad() {
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>realloc</td>
       <td colspan="19" class="empty"></td>
@@ -10483,19 +10484,19 @@ function archVersionsOnLoad() {
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>scalbn</td>
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>scalbnf</td>
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>scalbnl</td>
       <td colspan="19" class="empty"></td>
@@ -13089,7 +13090,7 @@ function archVersionsOnLoad() {
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc</td>
       <td>valloc</td>
       <td colspan="19" class="empty"></td>
@@ -13797,19 +13798,19 @@ function archVersionsOnLoad() {
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>aligned_alloc</td>
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>calloc</td>
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>free</td>
       <td colspan="19" class="empty"></td>
@@ -13827,132 +13828,134 @@ function archVersionsOnLoad() {
       <td colspan="27" class="empty"></td>
       <td>2.43</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>mallinfo</td>
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>mallinfo2</td>
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>malloc</td>
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>malloc_info</td>
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>malloc_stats</td>
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>malloc_trim</td>
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>malloc_usable_size</td>
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>mallopt</td>
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>mcheck</td>
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>mcheck_check_all</td>
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>mcheck_pedantic</td>
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>memalign</td>
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>mprobe</td>
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>mtrace</td>
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>muntrace</td>
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>posix_memalign</td>
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>pvalloc</td>
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>realloc</td>
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libc_malloc_debug</td>
       <td>valloc</td>
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libcrypt</td>
       <td>crypt</td>
       <td colspan="19" class="empty"></td>
-      <td colspan="4">2.35</td><td class="deleted">x</td>
+      <td colspan="4">2.35</td>
+      <td class="deleted">x</td>
       <td colspan="4" class="empty"></td>
     </tr>
-    <tr>
+    <tr class="deletion">
       <td>libcrypt</td>
       <td>crypt_r</td>
       <td colspan="19" class="empty"></td>
-      <td colspan="4">2.35</td><td class="deleted">x</td>
+      <td colspan="4">2.35</td>
+      <td class="deleted">x</td>
       <td colspan="4" class="empty"></td>
     </tr>
     <tr>
@@ -13973,13 +13976,13 @@ function archVersionsOnLoad() {
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libm</td>
       <td>__finite</td>
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libm</td>
       <td>__finitef</td>
       <td colspan="19" class="empty"></td>
@@ -14021,13 +14024,13 @@ function archVersionsOnLoad() {
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libm</td>
       <td>__signbit</td>
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libm</td>
       <td>__signbitf</td>
       <td colspan="19" class="empty"></td>
@@ -15119,13 +15122,13 @@ function archVersionsOnLoad() {
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libm</td>
       <td>copysign</td>
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libm</td>
       <td>copysignf</td>
       <td colspan="19" class="empty"></td>
@@ -15149,7 +15152,7 @@ function archVersionsOnLoad() {
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libm</td>
       <td>copysignl</td>
       <td colspan="19" class="empty"></td>
@@ -16217,19 +16220,19 @@ function archVersionsOnLoad() {
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libm</td>
       <td>finite</td>
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libm</td>
       <td>finitef</td>
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libm</td>
       <td>finitel</td>
       <td colspan="19" class="empty"></td>
@@ -16787,13 +16790,13 @@ function archVersionsOnLoad() {
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libm</td>
       <td>frexp</td>
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libm</td>
       <td>frexpf</td>
       <td colspan="19" class="empty"></td>
@@ -16817,7 +16820,7 @@ function archVersionsOnLoad() {
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libm</td>
       <td>frexpl</td>
       <td colspan="19" class="empty"></td>
@@ -17165,13 +17168,13 @@ function archVersionsOnLoad() {
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libm</td>
       <td>ldexp</td>
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libm</td>
       <td>ldexpf</td>
       <td colspan="19" class="empty"></td>
@@ -17195,7 +17198,7 @@ function archVersionsOnLoad() {
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libm</td>
       <td>ldexpl</td>
       <td colspan="19" class="empty"></td>
@@ -17741,13 +17744,13 @@ function archVersionsOnLoad() {
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libm</td>
       <td>modf</td>
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libm</td>
       <td>modff</td>
       <td colspan="19" class="empty"></td>
@@ -17771,7 +17774,7 @@ function archVersionsOnLoad() {
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libm</td>
       <td>modfl</td>
       <td colspan="19" class="empty"></td>
@@ -18389,13 +18392,13 @@ function archVersionsOnLoad() {
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libm</td>
       <td>scalbn</td>
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libm</td>
       <td>scalbnf</td>
       <td colspan="19" class="empty"></td>
@@ -18419,7 +18422,7 @@ function archVersionsOnLoad() {
       <td colspan="19" class="empty"></td>
       <td colspan="9">2.35</td>
     </tr>
-    <tr>
+    <tr class="moves">
       <td>libm</td>
       <td>scalbnl</td>
       <td colspan="19" class="empty"></td>

@@ -1,0 +1,873 @@
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <style>
+      tr, th, td {
+    border: 1px solid black;
+}
+
+td.deleted {
+    color: red;
+    font-weight: bold;
+}
+
+td.empty {
+    border: 0;
+}
+
+tr.hidden {
+    display: none;
+}
+  </style>
+  <script>
+    function omnipresentChanged(cb) {
+    const els = document.getElementsByClassName("omnipresent");
+    const add = cb.checked;
+    for (let i = 0; i < els.length; i++) {
+        if (add) {
+            els[i].classList.add("hidden");
+        } else {
+            els[i].classList.remove("hidden");
+        }
+    }
+}
+
+function archVersionsOnLoad() {
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    checkboxes.forEach(cb => cb.checked = false);
+}
+
+    
+  </script>
+</head>
+<body>
+<h1>glibc Version History</h1>
+<table>
+    <tr>
+        <th>Date</th>
+        <th>Git Tag</th>
+        <th>Full Version</th>
+        <th>X.Y Version</th>
+        <th>Git Commit</th>
+    </tr>
+    
+    <tr>
+        <td>2026-01-23</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=e1893fb767e03de24ae4e3949f98550b4dcace08">glibc-2.43.9000</a></td>
+        <td>2.43.9000</td>
+        <td>2.43</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=ae2192ee90c8dab57cfd985f24df6b959f02bcc3">ae2192ee90c8dab57cfd985f24df6b959f02bcc3</a></td>
+    </tr>
+    
+    <tr>
+        <td>2025-07-28</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=7aa1a7b39745de9bbd2ff3824dcd8e7ff3895419">glibc-2.42.9000</a></td>
+        <td>2.42.9000</td>
+        <td>2.42</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=170550da27f68a08589e91b541883dcc58dee640">170550da27f68a08589e91b541883dcc58dee640</a></td>
+    </tr>
+    
+    <tr>
+        <td>2025-01-28</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=c5f32109604b59544a70097e0faa12fb7868f691">glibc-2.41.9000</a></td>
+        <td>2.41.9000</td>
+        <td>2.41</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=42aba9189557280ad367c35908cbdfe26f5aeeb1">42aba9189557280ad367c35908cbdfe26f5aeeb1</a></td>
+    </tr>
+    
+    <tr>
+        <td>2024-07-21</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=e8aa49c7546784c54d5450c2829fa823be3e2592">glibc-2.40.9000</a></td>
+        <td>2.40.9000</td>
+        <td>2.40</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=51706101e771f6649652e736c2dcb30457191c4f">51706101e771f6649652e736c2dcb30457191c4f</a></td>
+    </tr>
+    
+    <tr>
+        <td>2024-01-31</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=e5087a9dd90036135c6b6cfa8356670c3dc5ced3">glibc-2.39.9000</a></td>
+        <td>2.39.9000</td>
+        <td>2.39</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=903cd866060555c77abbf70d0d85994ec5a18193">903cd866060555c77abbf70d0d85994ec5a18193</a></td>
+    </tr>
+    
+    <tr>
+        <td>2023-07-31</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=3e44839ca854678ffe8a35b2a5ab31c5f12c6964">glibc-2.38.9000</a></td>
+        <td>2.38.9000</td>
+        <td>2.38</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=78ca34d8c55eee6b0664f9c1d30fcca71077b843">78ca34d8c55eee6b0664f9c1d30fcca71077b843</a></td>
+    </tr>
+    
+    <tr>
+        <td>2023-01-31</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=d8950c7e6bce731032137b190cfbace06b45133f">glibc-2.37.9000</a></td>
+        <td>2.37.9000</td>
+        <td>2.37</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=2412deae1af0ca37b096ff73517486e7d1e9fe46">2412deae1af0ca37b096ff73517486e7d1e9fe46</a></td>
+    </tr>
+    
+    <tr>
+        <td>2022-07-30</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=6e5aa88fe24014522bf307bbc9b686260b23008e">glibc-2.36.9000</a></td>
+        <td>2.36.9000</td>
+        <td>2.36</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=5fded9c44537283593a7f839347f831e15726572">5fded9c44537283593a7f839347f831e15726572</a></td>
+    </tr>
+    
+    <tr>
+        <td>2022-02-03</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=85641d24875e8b8a3a18370ec359442839a821c7">glibc-2.35.9000</a></td>
+        <td>2.35.9000</td>
+        <td>2.35</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=bc6c1af537dbcc05e1559e02f0f12942a829c224">bc6c1af537dbcc05e1559e02f0f12942a829c224</a></td>
+    </tr>
+    
+    <tr>
+        <td>2021-08-01</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=a91d3da25430669ef5020ae6a7f9963ab528dcc8">glibc-2.34.9000</a></td>
+        <td>2.34.9000</td>
+        <td>2.34</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=a85c93c42433aa52d4c5bc18e1dff038a82415bf">a85c93c42433aa52d4c5bc18e1dff038a82415bf</a></td>
+    </tr>
+    
+    <tr>
+        <td>2021-02-01</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=f49ea61a97f7b9258dcba08e298933012b25f4d1">glibc-2.33.9000</a></td>
+        <td>2.33.9000</td>
+        <td>2.33</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=2edf8f3d754407e04f534df18a2ebe04175cda48">2edf8f3d754407e04f534df18a2ebe04175cda48</a></td>
+    </tr>
+    
+    <tr>
+        <td>2020-08-04</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=6e76ab513ac8c35bea76d882d8ccb8636a33fa74">glibc-2.32.9000</a></td>
+        <td>2.32.9000</td>
+        <td>2.32</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=4c56bcbceb05b44965d48e701711f850b83d7c69">4c56bcbceb05b44965d48e701711f850b83d7c69</a></td>
+    </tr>
+    
+    <tr>
+        <td>2020-02-01</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=7bc5b9f376038baabfddac70204d58163234985f">glibc-2.31.9000</a></td>
+        <td>2.31.9000</td>
+        <td>2.31</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=d8775136b5830394d50c98997983b96a236629bf">d8775136b5830394d50c98997983b96a236629bf</a></td>
+    </tr>
+    
+    <tr>
+        <td>2019-08-01</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=34c2f244d6031c8a0656fa894d610d980a10a234">glibc-2.30.9000</a></td>
+        <td>2.30.9000</td>
+        <td>2.30</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=0b8c2f95df589c9c1ad25312475049bcc7ed7059">0b8c2f95df589c9c1ad25312475049bcc7ed7059</a></td>
+    </tr>
+    
+    <tr>
+        <td>2019-01-31</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=cbcc680c774793034aa122ae2fa9b52be29e4dfd">glibc-2.29.9000</a></td>
+        <td>2.29.9000</td>
+        <td>2.29</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=de44ab67aa4eec369deea828733567c35a0611c0">de44ab67aa4eec369deea828733567c35a0611c0</a></td>
+    </tr>
+    
+    <tr>
+        <td>2018-08-01</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=4a793237825b5bdce33229a9d562a5813f1b30ff">glibc-2.28.9000</a></td>
+        <td>2.28.9000</td>
+        <td>2.28</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=437faa9675dd916ac7b239d4584b932a11fbb984">437faa9675dd916ac7b239d4584b932a11fbb984</a></td>
+    </tr>
+    
+    <tr>
+        <td>2018-02-01</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=b531d7cb8cf04ece600c30cd1afaf5e011dfb399">glibc-2.27.9000</a></td>
+        <td>2.27.9000</td>
+        <td>2.27</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=086ee48eaeaba871a2300daf85469671cc14c7e9">086ee48eaeaba871a2300daf85469671cc14c7e9</a></td>
+    </tr>
+    
+    <tr>
+        <td>2017-08-02</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=7394a7690b9d00e7d743bb997b18b73e5eb3e61e">glibc-2.26.9000</a></td>
+        <td>2.26.9000</td>
+        <td>2.26</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=00cdcf5a4110f7ac68651f5662693c82f7bffaca">00cdcf5a4110f7ac68651f5662693c82f7bffaca</a></td>
+    </tr>
+    
+    <tr>
+        <td>2017-02-05</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=9a07c29fabc89af8275b261e873527ce5e65d08e">glibc-2.25.90</a></td>
+        <td>2.25.90</td>
+        <td>2.25</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=58557c229319a3b8d2eefdb62e7df95089eabe37">58557c229319a3b8d2eefdb62e7df95089eabe37</a></td>
+    </tr>
+    
+    <tr>
+        <td>2016-08-01</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=3e04cd5c034558aed81660496c8d2114118dd007">glibc-2.24.90</a></td>
+        <td>2.24.90</td>
+        <td>2.24</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=e720d3d9fea2058adb3de2905f1a399ad3e812ff">e720d3d9fea2058adb3de2905f1a399ad3e812ff</a></td>
+    </tr>
+    
+    <tr>
+        <td>2016-02-18</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=9ba530af498aed1cbca87dc297e87a217f68d92b">glibc-2.23.90</a></td>
+        <td>2.23.90</td>
+        <td>2.23</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=c6f391dbf9b3b33e5bc0599dd96c40a0eff2f02b">c6f391dbf9b3b33e5bc0599dd96c40a0eff2f02b</a></td>
+    </tr>
+    
+    <tr>
+        <td>2015-08-05</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=bb268fa2ae686167b3bdaae47c57aaa55ed2449c">glibc-2.22.90</a></td>
+        <td>2.22.90</td>
+        <td>2.22</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=1b15ff4810748abee11b949e6faa115f3f2d20f4">1b15ff4810748abee11b949e6faa115f3f2d20f4</a></td>
+    </tr>
+    
+    <tr>
+        <td>2015-02-06</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=bfec52b89c886cc2fdb4f7124e7ba3f53d90fff2">glibc-2.21.90</a></td>
+        <td>2.21.90</td>
+        <td>2.21</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=d5a8b70560cf758218c13bef6f1dd93ce216424f">d5a8b70560cf758218c13bef6f1dd93ce216424f</a></td>
+    </tr>
+    
+    <tr>
+        <td>2014-09-08</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=40a51d081d210e0e7570f291ce8a51fc4bce66dd">glibc-2.20.90</a></td>
+        <td>2.20.90</td>
+        <td>2.20</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=21c83793a223666b8cfe438d81615941896b355c">21c83793a223666b8cfe438d81615941896b355c</a></td>
+    </tr>
+    
+    <tr>
+        <td>2014-02-08</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=9f1e80c119dfe07a0819ac69ff4c2947d4de400c">glibc-2.19.90</a></td>
+        <td>2.19.90</td>
+        <td>2.19</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=d5b396c1c89ed3026fc89bfcdd72b14d59972e45">d5b396c1c89ed3026fc89bfcdd72b14d59972e45</a></td>
+    </tr>
+    
+    <tr>
+        <td>2013-08-12</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=daa7a1cfb460b7dcda994020ac6c24ae60fbbbcd">glibc-2.18.90</a></td>
+        <td>2.18.90</td>
+        <td>2.18</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=6c1fd795711bb510cffaab5ad2ab2739bb8db210">6c1fd795711bb510cffaab5ad2ab2739bb8db210</a></td>
+    </tr>
+    
+    <tr>
+        <td>2012-12-25</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=4f465fed76aa7b7f63f05a3dbb45ac3575fe8e1e">glibc-2.17.90</a></td>
+        <td>2.17.90</td>
+        <td>2.17</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=2c8bfe7d6f22c4a599894846bf1715d93b295f53">2c8bfe7d6f22c4a599894846bf1715d93b295f53</a></td>
+    </tr>
+    
+    <tr>
+        <td>2012-07-01</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=63aa821ec011b9347414f4c0b6a75cce77f87ecf">glibc-2.16.90</a></td>
+        <td>2.16.90</td>
+        <td>2.16</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=e84eabb3871c9b39e59323bf3f6b98c2ca9d1cd0">e84eabb3871c9b39e59323bf3f6b98c2ca9d1cd0</a></td>
+    </tr>
+    
+    <tr>
+        <td>2012-06-30</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=513e85b2cf1cd644eb7c3f3eb4704a175d3d3f47">glibc-2.16.0</a></td>
+        <td>2.16.0</td>
+        <td>2.16</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=75f0d3040a2c2de8842bfa7a09e11da1a73e17d0">75f0d3040a2c2de8842bfa7a09e11da1a73e17d0</a></td>
+    </tr>
+    
+    <tr>
+        <td>2011-05-31</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=51b6134f8960dcfd67735b99d5b6bcd604d091df">glibc-2.14.9000</a></td>
+        <td>2.14.9000</td>
+        <td>2.14</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=c8fc0c91695b1c7003c7170861274161f9224817">c8fc0c91695b1c7003c7170861274161f9224817</a></td>
+    </tr>
+    
+    <tr>
+        <td>2011-10-07</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=fdc613a724a6607ccd9a7047d0d9ab52760f8b21">glibc-2.14.1</a></td>
+        <td>2.14.1</td>
+        <td>2.14</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=4f2b767fef50f5f5c356c0c0e424fccc893a4ae6">4f2b767fef50f5f5c356c0c0e424fccc893a4ae6</a></td>
+    </tr>
+    
+    <tr>
+        <td>2010-12-13</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=9e78718411c1004fd7940703f890be47093d0065">glibc-2.12.2</a></td>
+        <td>2.12.2</td>
+        <td>2.12</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=3a33e487eeb65e2f1f633581c56bee2c60d0ca43">3a33e487eeb65e2f1f633581c56bee2c60d0ca43</a></td>
+    </tr>
+    
+    <tr>
+        <td>2010-07-27</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=dce9bd5a1a884068ec6af866d5fc01e83f16cac0">glibc-2.12.1</a></td>
+        <td>2.12.1</td>
+        <td>2.12</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=6164128f1ca84eea240b66f977054e16b94b3c86">6164128f1ca84eea240b66f977054e16b94b3c86</a></td>
+    </tr>
+    
+    <tr>
+        <td>2010-11-30</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=7eb8083fb702b6d4c13a7946b5f2fed289ae026e">glibc-2.11.3</a></td>
+        <td>2.11.3</td>
+        <td>2.11</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=7372b19962badff7e2b400385f8800b3d389f9eb">7372b19962badff7e2b400385f8800b3d389f9eb</a></td>
+    </tr>
+    
+    <tr>
+        <td>2010-05-19</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=75faf027cd2c1439193cff99a0135e29c085495e">glibc-2.11.2</a></td>
+        <td>2.11.2</td>
+        <td>2.11</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=f2020c64596a90ca8d7d93afa1b8ad155d716f0e">f2020c64596a90ca8d7d93afa1b8ad155d716f0e</a></td>
+    </tr>
+    
+    <tr>
+        <td>2009-12-08</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=3403e095b72e647aea118b5379bea482db3bcbee">glibc-2.11.1</a></td>
+        <td>2.11.1</td>
+        <td>2.11</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=3decedce640208c25323bca68c98381c640ab06f">3decedce640208c25323bca68c98381c640ab06f</a></td>
+    </tr>
+    
+    <tr>
+        <td>2009-11-16</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=375a8dc1138b4e82b8d5d999f3e350f71b476ba6">glibc-2.10.2</a></td>
+        <td>2.10.2</td>
+        <td>2.10</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=dacc52e1922491a3b0e613a8be2d488871315114">dacc52e1922491a3b0e613a8be2d488871315114</a></td>
+    </tr>
+    
+    <tr>
+        <td>2009-05-11</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=cd396a77e631b3f0337d347ed61e2ca176bef0dd">glibc-2.10.1</a></td>
+        <td>2.10.1</td>
+        <td>2.10</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=9478a09b67b091071647b445076e12b8ed306cb4">9478a09b67b091071647b445076e12b8ed306cb4</a></td>
+    </tr>
+    
+    <tr>
+        <td>2007-05-15</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=c1d2e1ed710a262c28f203f9309735bebb020d15">glibc-2.6.9000</a></td>
+        <td>2.6.9000</td>
+        <td>2.6</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=87e66335db401815cb7793e34fd56a7ee36b5a79">87e66335db401815cb7793e34fd56a7ee36b5a79</a></td>
+    </tr>
+    
+    <tr>
+        <td>2007-07-31</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=863dac17306034dd86cca510f1725f8a4415f23a">glibc-2.6.1</a></td>
+        <td>2.6.1</td>
+        <td>2.6</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=e6ff5e32b8374ca1adb5f93b3ad81681d195ea55">e6ff5e32b8374ca1adb5f93b3ad81681d195ea55</a></td>
+    </tr>
+    
+    <tr>
+        <td>2007-07-31</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=60586e96d4ece98b8e49f9286c7fe84007eebc48">glibc-2.5.1</a></td>
+        <td>2.5.1</td>
+        <td>2.5</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=a57d39953500fbcc5503b07832f7324bb18faba5">a57d39953500fbcc5503b07832f7324bb18faba5</a></td>
+    </tr>
+    
+    <tr>
+        <td>2005-11-04</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=66eca1b2837d6fd975e98bcfd56004890a79c91a">glibc-2.3.6</a></td>
+        <td>2.3.6</td>
+        <td>2.3</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=733727c5a3703e37cd06256a1e60714418ccf4d0">733727c5a3703e37cd06256a1e60714418ccf4d0</a></td>
+    </tr>
+    
+    <tr>
+        <td>2005-04-07</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=c39004b3c53ed3b1e288f63d4c33aaf9a2330761">glibc-2.3.5</a></td>
+        <td>2.3.5</td>
+        <td>2.3</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=1afdd17390f6febdfe559e16dfc5c5718f8934aa">1afdd17390f6febdfe559e16dfc5c5718f8934aa</a></td>
+    </tr>
+    
+    <tr>
+        <td>2004-12-29</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=cf71667c83f79928ef4d7d21566a135068f429fc">glibc-2.3.4</a></td>
+        <td>2.3.4</td>
+        <td>2.3</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=fe7057ad928ffd9a3b0ccbb8d42442bf6ac65979">fe7057ad928ffd9a3b0ccbb8d42442bf6ac65979</a></td>
+    </tr>
+    
+    <tr>
+        <td>2003-12-01</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=f6aa668a4d8d0393d18ae65cf8b80a0dc97f31bb">glibc-2.3.3</a></td>
+        <td>2.3.3</td>
+        <td>2.3</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=3583ea85248c31a3e3cf142ff9adfe7bd62f6707">3583ea85248c31a3e3cf142ff9adfe7bd62f6707</a></td>
+    </tr>
+    
+    <tr>
+        <td>2003-03-01</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=5c67032e03d1a46cd779520ad07f9853b27d323a">glibc-2.3.2</a></td>
+        <td>2.3.2</td>
+        <td>2.3</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=85c54a327d4c05381603eb49792afa5ad5dbe46c">85c54a327d4c05381603eb49792afa5ad5dbe46c</a></td>
+    </tr>
+    
+    <tr>
+        <td>2002-10-10</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=898167b9fdeb80fef4ce571ea86553567e176bc5">glibc-2.3.1</a></td>
+        <td>2.3.1</td>
+        <td>2.3</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=ae352b440f7bb3904080eff13086e75a4c38245c">ae352b440f7bb3904080eff13086e75a4c38245c</a></td>
+    </tr>
+    
+    <tr>
+        <td>2002-01-21</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=a5c70301cccfedfc2315b6b1341c73999ccf7b1a">glibc-2.2.5</a></td>
+        <td>2.2.5</td>
+        <td>2.2</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=7d04edce9211ccd0ae06cd19d3cc2098d8891935">7d04edce9211ccd0ae06cd19d3cc2098d8891935</a></td>
+    </tr>
+    
+    <tr>
+        <td>2001-08-15</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=a2c06b8b07287cace167d5a744c76d0ff34d76a1">glibc-2.2.4</a></td>
+        <td>2.2.4</td>
+        <td>2.2</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=c0fd6e1d648ac5d4ac1a7e964ecf664a8aa5ce94">c0fd6e1d648ac5d4ac1a7e964ecf664a8aa5ce94</a></td>
+    </tr>
+    
+    <tr>
+        <td>2001-04-26</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=2693a510b449b61f0042ae5a706aa23016ab9f3e">glibc-2.2.3</a></td>
+        <td>2.2.3</td>
+        <td>2.2</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=fa39bea49e8023069711bded87d3d1398717bc1a">fa39bea49e8023069711bded87d3d1398717bc1a</a></td>
+    </tr>
+    
+    <tr>
+        <td>2001-02-15</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=2ddbcd2ea38ca6b1c6243a4ffb702a662b02e36f">glibc-2.2.2</a></td>
+        <td>2.2.2</td>
+        <td>2.2</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=2d0aea11b0637e7ad3c5df6da3395a8248416811">2d0aea11b0637e7ad3c5df6da3395a8248416811</a></td>
+    </tr>
+    
+    <tr>
+        <td>2001-01-13</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=dc9776949b73fe47b0a7e2639733f6e2d5b53307">glibc-2.2.1</a></td>
+        <td>2.2.1</td>
+        <td>2.2</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=467cc99edc20ae86fd9eae272eb3b6f166e2afd7">467cc99edc20ae86fd9eae272eb3b6f166e2afd7</a></td>
+    </tr>
+    
+    <tr>
+        <td>2000-11-03</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=ccf40f2f5ede2fb9999f79f2401924fd0a1a11a5">glibc-2.1.97</a></td>
+        <td>2.1.97</td>
+        <td>2.1</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=8bc6161d5066bfa2f38010e978f09a4b9c0956f8">8bc6161d5066bfa2f38010e978f09a4b9c0956f8</a></td>
+    </tr>
+    
+    <tr>
+        <td>2000-10-27</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=27ab7840874b878983b13e9c1b14b5a24b1f0466">glibc-2.1.96</a></td>
+        <td>2.1.96</td>
+        <td>2.1</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=5ab7f7c12a6c072c0e44d388ca45c32f3b6b839d">5ab7f7c12a6c072c0e44d388ca45c32f3b6b839d</a></td>
+    </tr>
+    
+    <tr>
+        <td>2000-10-09</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=74e6c967dcce70cfc6fd8efb323627534164c2ae">glibc-2.1.95</a></td>
+        <td>2.1.95</td>
+        <td>2.1</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=e340a2a2e21c455c57bb19d7495f00f44b666b63">e340a2a2e21c455c57bb19d7495f00f44b666b63</a></td>
+    </tr>
+    
+    <tr>
+        <td>2000-09-19</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=372b53898291f4f8f8866da1da6be83b75af299e">glibc-2.1.94</a></td>
+        <td>2.1.94</td>
+        <td>2.1</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=2b83a3377c39fc4ec307a43c59aff619054aa6f5">2b83a3377c39fc4ec307a43c59aff619054aa6f5</a></td>
+    </tr>
+    
+    <tr>
+        <td>2000-08-31</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=d7f1a8880137ce85f0ccc53ec57358071d250883">glibc-2.1.93</a></td>
+        <td>2.1.93</td>
+        <td>2.1</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=3d784d830015dcb614bf2d154e726e67bd10ea32">3d784d830015dcb614bf2d154e726e67bd10ea32</a></td>
+    </tr>
+    
+    <tr>
+        <td>2000-08-02</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=633e992fa055bc738405837e92442f71d8123b36">glibc-2.1.92</a></td>
+        <td>2.1.92</td>
+        <td>2.1</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=74dd1fee1cea649ee16ee94c898cc71ce67dd02f">74dd1fee1cea649ee16ee94c898cc71ce67dd02f</a></td>
+    </tr>
+    
+    <tr>
+        <td>2000-07-01</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=6a3514cc12f98dcbc5bde7d70b2a114bf7017f89">glibc-2.1.91</a></td>
+        <td>2.1.91</td>
+        <td>2.1</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=a2294e570c396e6088329647ecdac3eab147f22f">a2294e570c396e6088329647ecdac3eab147f22f</a></td>
+    </tr>
+    
+    <tr>
+        <td>1999-09-06</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=3cddbdf3c62f8a8d894dff9475f544f7b1a8a03e">glibc-2.1.2</a></td>
+        <td>2.1.2</td>
+        <td>2.1</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=a23b24ae85554adb47c9c4a0fbd77739a687c634">a23b24ae85554adb47c9c4a0fbd77739a687c634</a></td>
+    </tr>
+    
+    <tr>
+        <td>1999-05-24</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=f0480e58662bb077db58944b1ade3f17f1f9794c">glibc-2.1.1</a></td>
+        <td>2.1.1</td>
+        <td>2.1</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=6d8ec2b1b2934abc8d951ccb534872f0086fda48">6d8ec2b1b2934abc8d951ccb534872f0086fda48</a></td>
+    </tr>
+    
+    <tr>
+        <td>1999-01-29</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=271181531c45cd5550d5fe1399968773d6595554">glibc-2.0.112</a></td>
+        <td>2.0.112</td>
+        <td>2.0</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=6eaccb759aff7e3fdd679d39aabaf773b18dfbd1">6eaccb759aff7e3fdd679d39aabaf773b18dfbd1</a></td>
+    </tr>
+    
+    <tr>
+        <td>1998-12-07</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=0a0fd7e42e46c1fe936131e7febab12c8915efeb">glibc-2.0.106</a></td>
+        <td>2.0.106</td>
+        <td>2.0</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=b38bb8ca8c9a7652087405d851e9ba6c55305854">b38bb8ca8c9a7652087405d851e9ba6c55305854</a></td>
+    </tr>
+    
+    <tr>
+        <td>1998-11-20</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=d7fda2605fe42ebef1382127484d4751897bbf3a">glibc-2.0.103</a></td>
+        <td>2.0.103</td>
+        <td>2.0</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=b17f830fe1d176cf28cef34b5241aabaf3198e9c">b17f830fe1d176cf28cef34b5241aabaf3198e9c</a></td>
+    </tr>
+    
+    <tr>
+        <td>1998-11-13</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=8765e572cf8fbc66a57ccecc42af99b0f5a2a335">glibc-2.0.101</a></td>
+        <td>2.0.101</td>
+        <td>2.0</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=47b856a9eac04e1e18d949cc751c397610bba429">47b856a9eac04e1e18d949cc751c397610bba429</a></td>
+    </tr>
+    
+    <tr>
+        <td>1998-11-05</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=50f9832e89bf5ec4f5b6fffd5372686962b6aeb9">glibc-2.0.100</a></td>
+        <td>2.0.100</td>
+        <td>2.0</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=fe959e1efb0353204c67cc590e51e0ccba58d241">fe959e1efb0353204c67cc590e51e0ccba58d241</a></td>
+    </tr>
+    
+    <tr>
+        <td>1998-10-23</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=9b2869e9cf68dc0960e989b3a0d4f11a3c57c3b4">glibc-2.0.99</a></td>
+        <td>2.0.99</td>
+        <td>2.0</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=0d486134da09d9c29bba8f906d9f0069813e3426">0d486134da09d9c29bba8f906d9f0069813e3426</a></td>
+    </tr>
+    
+    <tr>
+        <td>1998-10-14</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=941925540fac26c8cb7ae88c4a14584ceb36e9db">glibc-2.0.98</a></td>
+        <td>2.0.98</td>
+        <td>2.0</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=6f100d04b0faec0d809e5d244493cb56ba9de348">6f100d04b0faec0d809e5d244493cb56ba9de348</a></td>
+    </tr>
+    
+    <tr>
+        <td>1998-10-06</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=b60a73cc57e43d20dd2368df4caa9097bb7252a7">glibc-2.0.97</a></td>
+        <td>2.0.97</td>
+        <td>2.0</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=1e02536fbc2ef83dadbb29155212b80a61e42fe4">1e02536fbc2ef83dadbb29155212b80a61e42fe4</a></td>
+    </tr>
+    
+    <tr>
+        <td>1998-09-20</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=cb0f57065d83611d8add56ccbd8eace56a210d53">glibc-2.0.96</a></td>
+        <td>2.0.96</td>
+        <td>2.0</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=b0fd6165c72f56f0ff6383a5cc89d74ff24820fa">b0fd6165c72f56f0ff6383a5cc89d74ff24820fa</a></td>
+    </tr>
+    
+    <tr>
+        <td>1998-07-29</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=94f2f66e6dde13da7672fb00ed836ac82e27e138">glibc-2.0.95</a></td>
+        <td>2.0.95</td>
+        <td>2.0</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=ef5742267ce858e059ee27033014c24f009bb326">ef5742267ce858e059ee27033014c24f009bb326</a></td>
+    </tr>
+    
+    <tr>
+        <td>1998-03-25</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=01ea57919ffd9fc839b4a416aae2dafbe24c05bc">glibc-2.0.92</a></td>
+        <td>2.0.92</td>
+        <td>2.0</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=6f5ea8c71731adb6fc5b364e7aa6dd59dba96fdf">6f5ea8c71731adb6fc5b364e7aa6dd59dba96fdf</a></td>
+    </tr>
+    
+    <tr>
+        <td>1997-12-28</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=2ef2073baf62fa32dd0a3507792ebe0f1ede500a">glibc-2.0.6</a></td>
+        <td>2.0.6</td>
+        <td>2.0</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=45cfe22efea3f11718f444fcce542bdc3e303e1c">45cfe22efea3f11718f444fcce542bdc3e303e1c</a></td>
+    </tr>
+    
+    <tr>
+        <td>1997-08-25</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=02ff5dd331850523056228781a58efba922bf7f9">glibc-2.0.5</a></td>
+        <td>2.0.5</td>
+        <td>2.0</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=a28c2ca07a1fb266752e6055adf9be4f9d764c5d">a28c2ca07a1fb266752e6055adf9be4f9d764c5d</a></td>
+    </tr>
+    
+    <tr>
+        <td>1997-03-17</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=e12ee538f56f88a1fc54a22873f2230ce9ffff5e">glibc-2.0.4</a></td>
+        <td>2.0.4</td>
+        <td>2.0</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=7e165c9059ba631ea06690780bf0d1164e382fda">7e165c9059ba631ea06690780bf0d1164e382fda</a></td>
+    </tr>
+    
+    <tr>
+        <td>1997-03-22</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=tag;h=8aa5fc8d20fc130dca31f37a6f63984e0e48a317">glibc-2.0.2</a></td>
+        <td>2.0.2</td>
+        <td>2.0</td>
+        <td><a href="https://sourceware.org/git/?p=glibc.git;a=commit;h=133192c659e3b55b7adb7664dc80be611e5afb9b">133192c659e3b55b7adb7664dc80be611e5afb9b</a></td>
+    </tr>
+    
+</table>
+
+<h1>glibc ABI Report</h1>
+<ul>
+    
+    <li><a href="arm-nacl.html">arm-nacl</a></li>
+    
+    <li><a href="generic.html">generic</a></li>
+    
+    <li><a href="hurd-i386.html">hurd-i386</a></li>
+    
+    <li><a href="hurd-x86_64.html">hurd-x86_64</a></li>
+    
+    <li><a href="nacl.html">nacl</a></li>
+    
+    <li><a href="linux-aarch64.html">linux-aarch64</a></li>
+    
+    <li><a href="linux-alpha.html">linux-alpha</a></li>
+    
+    <li><a href="linux-arc.html">linux-arc</a></li>
+    
+    <li><a href="linux-arm.html">linux-arm</a></li>
+    
+    <li><a href="linux-arm-be.html">linux-arm-be</a></li>
+    
+    <li><a href="linux-arm-le.html">linux-arm-le</a></li>
+    
+    <li><a href="linux-csky.html">linux-csky</a></li>
+    
+    <li><a href="linux-hppa.html">linux-hppa</a></li>
+    
+    <li><a href="linux-i386.html">linux-i386</a></li>
+    
+    <li><a href="linux-i386-nptl.html">linux-i386-nptl</a></li>
+    
+    <li><a href="linux-ia64.html">linux-ia64</a></li>
+    
+    <li><a href="linux-loongarch-lp64.html">linux-loongarch-lp64</a></li>
+    
+    <li><a href="linux-m68k-coldfire.html">linux-m68k-coldfire</a></li>
+    
+    <li><a href="linux-m68k-m680x0.html">linux-m68k-m680x0</a></li>
+    
+    <li><a href="linux-microblaze.html">linux-microblaze</a></li>
+    
+    <li><a href="linux-microblaze-be.html">linux-microblaze-be</a></li>
+    
+    <li><a href="linux-microblaze-le.html">linux-microblaze-le</a></li>
+    
+    <li><a href="linux-mips-mips32.html">linux-mips-mips32</a></li>
+    
+    <li><a href="linux-mips-mips32-fpu.html">linux-mips-mips32-fpu</a></li>
+    
+    <li><a href="linux-mips-mips32-nofpu.html">linux-mips-mips32-nofpu</a></li>
+    
+    <li><a href="linux-mips-mips64.html">linux-mips-mips64</a></li>
+    
+    <li><a href="linux-mips-mips64-n32.html">linux-mips-mips64-n32</a></li>
+    
+    <li><a href="linux-mips-mips64-n64.html">linux-mips-mips64-n64</a></li>
+    
+    <li><a href="linux-nios2.html">linux-nios2</a></li>
+    
+    <li><a href="linux-or1k.html">linux-or1k</a></li>
+    
+    <li><a href="linux-powerpc-powerpc32.html">linux-powerpc-powerpc32</a></li>
+    
+    <li><a href="linux-powerpc-powerpc32-fpu.html">linux-powerpc-powerpc32-fpu</a></li>
+    
+    <li><a href="linux-powerpc-powerpc32-fpu-nptl.html">linux-powerpc-powerpc32-fpu-nptl</a></li>
+    
+    <li><a href="linux-powerpc-powerpc32-nofpu.html">linux-powerpc-powerpc32-nofpu</a></li>
+    
+    <li><a href="linux-powerpc-powerpc32-nofpu-nptl.html">linux-powerpc-powerpc32-nofpu-nptl</a></li>
+    
+    <li><a href="linux-powerpc-powerpc64.html">linux-powerpc-powerpc64</a></li>
+    
+    <li><a href="linux-powerpc-powerpc64-be.html">linux-powerpc-powerpc64-be</a></li>
+    
+    <li><a href="linux-powerpc-powerpc64-le.html">linux-powerpc-powerpc64-le</a></li>
+    
+    <li><a href="linux-powerpc-powerpc64-nptl.html">linux-powerpc-powerpc64-nptl</a></li>
+    
+    <li><a href="linux-riscv-rv32.html">linux-riscv-rv32</a></li>
+    
+    <li><a href="linux-riscv-rv64.html">linux-riscv-rv64</a></li>
+    
+    <li><a href="linux-s390.html">linux-s390</a></li>
+    
+    <li><a href="linux-s390-s390-32.html">linux-s390-s390-32</a></li>
+    
+    <li><a href="linux-s390-s390-32-nptl.html">linux-s390-s390-32-nptl</a></li>
+    
+    <li><a href="linux-s390-s390-64.html">linux-s390-s390-64</a></li>
+    
+    <li><a href="linux-s390-s390-64-nptl.html">linux-s390-s390-64-nptl</a></li>
+    
+    <li><a href="linux-sh.html">linux-sh</a></li>
+    
+    <li><a href="linux-sh-be.html">linux-sh-be</a></li>
+    
+    <li><a href="linux-sh-le.html">linux-sh-le</a></li>
+    
+    <li><a href="linux-sh-nptl.html">linux-sh-nptl</a></li>
+    
+    <li><a href="linux-sparc-sparc32.html">linux-sparc-sparc32</a></li>
+    
+    <li><a href="linux-sparc-sparc32-nptl.html">linux-sparc-sparc32-nptl</a></li>
+    
+    <li><a href="linux-sparc-sparc64.html">linux-sparc-sparc64</a></li>
+    
+    <li><a href="linux-sparc-sparc64-nptl.html">linux-sparc-sparc64-nptl</a></li>
+    
+    <li><a href="linux-tile-tilegx-tilegx32.html">linux-tile-tilegx-tilegx32</a></li>
+    
+    <li><a href="linux-tile-tilegx-tilegx64.html">linux-tile-tilegx-tilegx64</a></li>
+    
+    <li><a href="linux-tile-tilegx32.html">linux-tile-tilegx32</a></li>
+    
+    <li><a href="linux-tile-tilegx64.html">linux-tile-tilegx64</a></li>
+    
+    <li><a href="linux-tile-tilepro.html">linux-tile-tilepro</a></li>
+    
+    <li><a href="linux-x86_64.html">linux-x86_64</a></li>
+    
+    <li><a href="linux-x86_64-64.html">linux-x86_64-64</a></li>
+    
+    <li><a href="linux-x86_64-64-nptl.html">linux-x86_64-64-nptl</a></li>
+    
+    <li><a href="linux-x86_64-x32.html">linux-x86_64-x32</a></li>
+    
+    <li><a href="linux-x86_64-x32-nptl.html">linux-x86_64-x32-nptl</a></li>
+    
+</ul>
+
+<h1>Common Distro glibc Versions</h1>
+<table>
+    <tr>
+        <th>Distribution</th>
+        <th>Versions</th>
+    </tr>
+    
+    <tr>
+        <td>debian 7 (wheezy)</td>
+        <td>2.13</td>
+    </tr>
+    
+    <tr>
+        <td>debian 8 (jessie)</td>
+        <td>2.19</td>
+    </tr>
+    
+    <tr>
+        <td>debian 9 (stretch)</td>
+        <td>2.24</td>
+    </tr>
+    
+    <tr>
+        <td>debian 10 (buster)</td>
+        <td>2.28</td>
+    </tr>
+    
+    <tr>
+        <td>debian 11 (bullseye)</td>
+        <td>2.31</td>
+    </tr>
+    
+    <tr>
+        <td>debian 12 (bookworm)</td>
+        <td>2.36</td>
+    </tr>
+    
+    <tr>
+        <td>ubuntu 14.04</td>
+        <td>2.19</td>
+    </tr>
+    
+    <tr>
+        <td>ubuntu 16.04</td>
+        <td>2.23</td>
+    </tr>
+    
+    <tr>
+        <td>ubuntu 18.04</td>
+        <td>2.27</td>
+    </tr>
+    
+    <tr>
+        <td>ubuntu 20.04</td>
+        <td>2.31</td>
+    </tr>
+    
+    <tr>
+        <td>ubuntu 22.04</td>
+        <td>2.35</td>
+    </tr>
+    
+    <tr>
+        <td>ubuntu 24.04</td>
+        <td>2.39</td>
+    </tr>
+    
+    <tr>
+        <td>ubuntu 26.04</td>
+        <td>2.43</td>
+    </tr>
+    
+</table>
+
+</body>
+</html>
